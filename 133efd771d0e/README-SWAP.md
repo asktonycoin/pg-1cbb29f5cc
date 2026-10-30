@@ -4,19 +4,12 @@ Open `index.html` and edit the CONFIG block near the top of the `<script>`:
 
 ```js
 const CONFIG = {
-  clientName: "Acme Labs",
-  logoUrl: "logo.jpg",   // put logo.jpg next to index.html, or use a full https URL
-  accent: "#5fa8a0",     // optional brand accent
-  accentDeep: "#3d7a74",
+  clientName: "Acme",
+  logoUrl: "logo.jpg",   // or "" for placeholder
+  accent: "#ff3d71",     // optional
+  accentDeep: "#c8ff3d", // optional
   ...
 };
 ```
 
-1. Replace `clientName` with the company name.
-2. Drop their logo file beside `index.html` as `logo.jpg` (or `.png`) and set `logoUrl` to that filename.
-3. Optionally change `accent` / `accentDeep` to their brand colors.
-4. Push / refresh the GitHub Pages link.
-
-Leave `logoUrl: ""` to keep the dashed "Client logo" placeholder.
-
-Steppas mark in the nav is `steppa-mark.png` (not the client logo).
+Place `logo.jpg` next to `index.html` (or use any https image URL).

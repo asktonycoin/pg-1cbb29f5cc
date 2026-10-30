@@ -3,32 +3,29 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Zango × Steppas · $2,500 Campaign Offer</title>
-<link rel="preconnect" href="https://api.fontshare.com">
+<title>Zango × Steppas · $2,500 Campaign</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=satoshi@500,700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#05070a;
-  --bg2:#0a0f14;
-  --panel:rgba(14,18,24,.72);
-  --panel2:rgba(18,24,32,.9);
+  --bg:#050506;
+  --bg2:#0c0c10;
+  --panel:rgba(18,18,24,.78);
+  --panel2:rgba(22,22,30,.92);
   --line:rgba(255,255,255,.08);
-  --line2:rgba(255,255,255,.14);
-  --text:#f4f7f5;
-  --mut:#8b9690;
-  --acc:#70f8d0;
-  --acc2:#f88020;
-  --prem:#c084fc;
-  --pink:#f800d8;
-  --red:#ff3b3b;
-  --glow:rgba(112,248,208,.28);
-  --font-display:"Clash Display","Unbounded",system-ui,sans-serif;
-  --font-body:"Satoshi","Space Grotesk",system-ui,sans-serif;
-  --radius:18px;
-  --max:1180px;
+  --line2:rgba(255,255,255,.16);
+  --text:#f4f1ea;
+  --mut:#9a958c;
+  --acc:#ff3d71;
+  --acc2:#c8ff3d;
+  --prem:#7c5cff;
+  --ice:#7ad7ff;
+  --glow:rgba(255,61,113,.3);
+  --font-display:"Syne",system-ui,sans-serif;
+  --font-body:"DM Sans",system-ui,sans-serif;
+  --radius:16px;
+  --max:1140px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -37,7 +34,7 @@ body{
   color:var(--text);
   font-family:var(--font-body);
   font-weight:500;
-  line-height:1.45;
+  line-height:1.5;
   overflow-x:hidden;
   min-height:100vh;
 }
@@ -45,125 +42,134 @@ body::before{
   content:"";
   position:fixed;inset:0;pointer-events:none;z-index:0;
   background:
-    radial-gradient(900px 500px at 15% -10%, rgba(112,248,208,.12), transparent 60%),
-    radial-gradient(700px 420px at 90% 10%, rgba(248,128,32,.08), transparent 55%),
-    radial-gradient(600px 400px at 50% 100%, rgba(192,132,252,.06), transparent 50%);
+    radial-gradient(800px 480px at 8% -8%, rgba(255,61,113,.16), transparent 55%),
+    radial-gradient(700px 420px at 95% 5%, rgba(200,255,61,.08), transparent 50%),
+    radial-gradient(600px 500px at 50% 110%, rgba(124,92,255,.1), transparent 55%);
+}
+body::after{
+  content:"";
+  position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 a{color:var(--acc);text-decoration:none}
 a:hover{color:#fff}
 img{max-width:100%;display:block}
 button,input,select{font:inherit;color:inherit}
-.wrap{width:min(100% - 32px, var(--max));margin-inline:auto;position:relative;z-index:2}
+.wrap{width:min(100% - 32px, var(--max));margin-inline:auto;position:relative;z-index:3}
 .eb{
   display:inline-flex;align-items:center;gap:8px;
-  font-family:var(--font-display);font-weight:600;letter-spacing:.14em;
-  text-transform:uppercase;font-size:11px;color:var(--acc);
+  font-family:var(--font-display);font-weight:700;letter-spacing:.16em;
+  text-transform:uppercase;font-size:11px;color:var(--acc2);
 }
-.eb::before{content:"";width:18px;height:2px;background:var(--acc);box-shadow:0 0 12px var(--glow)}
-h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-.02em;line-height:1.05}
-h1{font-size:clamp(42px,7.2vw,84px);margin:.2em 0 .35em}
-h2{font-size:clamp(28px,4.2vw,48px);margin:.15em 0 .4em}
+.eb::before{content:"";width:14px;height:14px;clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);background:var(--acc2);box-shadow:0 0 14px rgba(200,255,61,.45)}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:800;letter-spacing:-.03em;line-height:1.02}
+h1{font-size:clamp(40px,7vw,86px);margin:.15em 0 .3em;text-transform:uppercase}
+h2{font-size:clamp(28px,4.4vw,52px);margin:.12em 0 .35em;text-transform:uppercase}
 h3{font-size:clamp(18px,2.2vw,24px)}
-.lead{font-size:clamp(16px,1.6vw,19px);color:#c7d0cb;max-width:54ch}
+.lead{font-size:clamp(16px,1.55vw,19px);color:#d8d2c6;max-width:52ch}
 .mut{color:var(--mut);font-size:14px}
 .xl{color:var(--acc)}
 
-/* Fixed rotating Steppa mark */
 .bg-logo{
   position:fixed;left:50%;top:50%;
-  width:min(140vw,1400px);height:min(140vw,1400px);
+  width:min(145vw,1480px);height:min(145vw,1480px);
   transform:translate(-50%,-50%) rotate(0deg);
-  z-index:0;pointer-events:none;opacity:.07;
+  z-index:0;pointer-events:none;opacity:.08;
   will-change:transform;
   mix-blend-mode:screen;
 }
-.bg-logo img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 0 40px rgba(112,248,208,.15))}
-@media (prefers-reduced-motion:reduce){
-  .bg-logo{transition:none!important}
-}
+.bg-logo img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 0 50px rgba(255,61,113,.18))}
+@media (prefers-reduced-motion:reduce){.bg-logo{transition:none!important}}
 
-/* Nav */
 nav{
   position:sticky;top:0;z-index:50;
-  backdrop-filter:blur(16px) saturate(140%);
-  background:rgba(5,7,10,.72);
+  backdrop-filter:blur(18px) saturate(160%);
+  background:rgba(5,5,6,.7);
   border-bottom:1px solid var(--line);
 }
 nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:64px;gap:16px}
-nav .wm{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700;letter-spacing:-.01em}
-nav .wm img{width:28px;height:28px;object-fit:contain}
+nav .wm{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:800;letter-spacing:-.01em;text-transform:uppercase;font-size:14px}
+nav .wm img{width:26px;height:26px;object-fit:contain}
 nav .wm em{color:var(--acc);font-style:normal}
-nav .links{display:flex;flex-wrap:wrap;gap:6px 14px}
-nav .links a{color:#b7c2bc;font-size:13px;font-weight:600;letter-spacing:.02em;text-transform:uppercase}
-nav .links a:hover{color:var(--acc)}
+nav .links{display:flex;flex-wrap:wrap;gap:6px 16px}
+nav .links a{color:#b8b2a6;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+nav .links a:hover{color:var(--acc2)}
 
-/* Marquee */
 .ticker{
   overflow:hidden;border-block:1px solid var(--line);
-  background:linear-gradient(90deg, rgba(112,248,208,.06), transparent 30%, transparent 70%, rgba(248,128,32,.06));
-  position:relative;z-index:2;
+  background:linear-gradient(90deg, rgba(255,61,113,.08), transparent 28%, transparent 72%, rgba(200,255,61,.07));
+  position:relative;z-index:3;
 }
 .ticker-track{
-  display:flex;gap:48px;width:max-content;
-  padding:12px 0;font-family:var(--font-display);font-weight:600;
-  letter-spacing:.08em;text-transform:uppercase;font-size:12px;color:#9aa89f;
-  animation:marquee 38s linear infinite;
+  display:flex;gap:44px;width:max-content;
+  padding:11px 0;font-family:var(--font-display);font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;font-size:12px;color:#a8a297;
+  animation:marquee 36s linear infinite;
 }
-.ticker-track b{color:var(--acc)}
-.ticker-track .dot{color:var(--acc2)}
+.ticker-track b{color:var(--acc2)}
+.ticker-track .dot{color:var(--acc)}
 @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion:reduce){.ticker-track{animation:none}}
 
-section{padding:72px 0;position:relative;z-index:2}
+section{padding:76px 0;position:relative;z-index:3}
 section + section{border-top:1px solid var(--line)}
 
-/* Hero */
 .hero{
-  display:grid;grid-template-columns:1.35fr .85fr;gap:36px;align-items:center;
-  padding-top:28px;padding-bottom:20px;
+  display:grid;grid-template-columns:1.4fr .8fr;gap:40px;align-items:center;
+  padding-top:24px;padding-bottom:12px;
 }
-.hero .kicker{margin-bottom:10px}
-.hero h1 span{color:var(--acc);text-shadow:0 0 40px var(--glow)}
+.hero h1 span{
+  color:var(--acc);
+  text-shadow:0 0 48px var(--glow);
+  display:inline;
+}
 .hero-visual{
-  background:linear-gradient(160deg, rgba(112,248,208,.1), rgba(248,128,32,.05) 40%, rgba(5,7,10,.2));
-  border:1px solid var(--line2);border-radius:28px;padding:28px;
-  box-shadow:0 30px 80px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.06);
+  position:relative;
+  background:
+    linear-gradient(155deg, rgba(255,61,113,.14), transparent 42%),
+    linear-gradient(335deg, rgba(200,255,61,.08), transparent 40%),
+    var(--panel2);
+  border:1px solid var(--line2);
+  border-radius:28px;
+  padding:28px;
+  box-shadow:0 28px 80px rgba(0,0,0,.5), inset 0 1px 0 rgba(255,255,255,.07);
   display:flex;flex-direction:column;align-items:center;gap:14px;
+  overflow:hidden;
+}
+.hero-visual::before{
+  content:"";position:absolute;inset:12px;border:1px dashed rgba(200,255,61,.25);border-radius:20px;pointer-events:none;
 }
 .logo-slot{
-  width:160px;height:160px;border-radius:28px;
-  border:1px dashed rgba(112,248,208,.35);
-  display:grid;place-items:center;background:rgba(0,0,0,.35);overflow:hidden;
+  width:150px;height:150px;border-radius:26px;
+  border:1px dashed rgba(255,61,113,.4);
+  display:grid;place-items:center;background:rgba(0,0,0,.4);overflow:hidden;position:relative;z-index:1;
 }
 .logo-slot img{width:100%;height:100%;object-fit:cover}
 .logo-slot .ph{
   text-align:center;color:var(--mut);font-family:var(--font-display);
-  font-size:13px;letter-spacing:.12em;text-transform:uppercase;line-height:1.4
+  font-size:12px;letter-spacing:.14em;text-transform:uppercase;line-height:1.4
 }
 .client-tag{
-  font-family:var(--font-display);font-weight:600;font-size:13px;
-  letter-spacing:.1em;text-transform:uppercase;color:#cfe8df
+  font-family:var(--font-display);font-weight:700;font-size:12px;
+  letter-spacing:.12em;text-transform:uppercase;color:#efe8dc;position:relative;z-index:1
 }
 .g3,.g4{display:grid;gap:12px}
 .g3{grid-template-columns:repeat(3,1fr)}
 .g4{grid-template-columns:repeat(4,1fr)}
 .kpi,.card{
   background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
-  padding:18px 16px;backdrop-filter:blur(10px);
+  padding:18px 16px;backdrop-filter:blur(12px);
 }
 .kpi b,.card h3{
-  display:block;font-family:var(--font-display);font-size:clamp(22px,2.6vw,32px);
+  display:block;font-family:var(--font-display);font-size:clamp(22px,2.6vw,34px);
   letter-spacing:-.03em;margin:.15em 0
 }
 .kpi span,.card .eb{color:var(--mut);letter-spacing:.08em}
 
-/* Controls */
-.controls{
-  display:flex;flex-wrap:wrap;gap:12px;align-items:end;margin:22px 0 18px
-}
+.controls{display:flex;flex-wrap:wrap;gap:12px;align-items:end;margin:22px 0 18px}
 .controls label{
-  display:flex;flex-direction:column;gap:6px;font-size:12px;color:var(--mut);
-  letter-spacing:.06em;text-transform:uppercase;font-family:var(--font-display);font-weight:600
+  display:flex;flex-direction:column;gap:6px;font-size:11px;color:var(--mut);
+  letter-spacing:.08em;text-transform:uppercase;font-family:var(--font-display);font-weight:700
 }
 .controls input,.controls select{
   background:var(--panel2);border:1px solid var(--line2);border-radius:12px;
@@ -171,71 +177,62 @@ section + section{border-top:1px solid var(--line)}
 }
 .controls input:focus,.controls select:focus{border-color:var(--acc);box-shadow:0 0 0 3px var(--glow)}
 .ghost,.btn{
-  border:1px solid var(--line2);background:rgba(112,248,208,.08);color:var(--text);
+  border:1px solid var(--line2);background:rgba(255,61,113,.08);color:var(--text);
   border-radius:999px;padding:12px 18px;cursor:pointer;font-family:var(--font-display);
-  font-weight:600;letter-spacing:.04em;text-transform:uppercase;font-size:12px;
+  font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:12px;
   transition:transform .15s ease, background .15s ease, border-color .15s ease
 }
-.ghost:hover,.btn:hover{background:rgba(112,248,208,.16);border-color:var(--acc);transform:translateY(-1px)}
-.btn-acc{background:var(--acc);color:#04110d;border-color:transparent}
-.btn-acc:hover{background:#9affdf;color:#04110d}
-.btn-prem{background:rgba(192,132,252,.14);border-color:rgba(192,132,252,.4)}
+.ghost:hover,.btn:hover{background:rgba(255,61,113,.16);border-color:var(--acc);transform:translateY(-1px)}
+.btn-acc{background:var(--acc);color:#14040a;border-color:transparent}
+.btn-acc:hover{background:#ff6b93;color:#14040a}
+.btn-prem{background:rgba(124,92,255,.16);border-color:rgba(124,92,255,.45)}
+.btn-lime{background:var(--acc2);color:#101400;border-color:transparent}
+.btn-lime:hover{background:#dcff6a;color:#101400}
 .alloc{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 8px}
 .pill{
   display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border-radius:999px;
   border:1px solid var(--line2);background:rgba(255,255,255,.03);
-  font-family:var(--font-display);font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase
+  font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase
 }
-.pill.full{border-color:var(--acc2);color:var(--acc2);box-shadow:0 0 18px rgba(248,128,32,.2)}
+.pill.full{border-color:var(--acc2);color:var(--acc2);box-shadow:0 0 18px rgba(200,255,61,.2)}
 
-/* Roster flip cards */
-.roster-grid{
-  display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:16px
-}
-.rcard{
-  perspective:1000px;min-height:280px
-}
+.roster-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:16px}
+.rcard{perspective:1100px;min-height:286px}
 .rcard-inner{
-  position:relative;width:100%;height:100%;min-height:280px;
+  position:relative;width:100%;height:100%;min-height:286px;
   transform-style:preserve-3d;transition:transform .55s cubic-bezier(.2,.8,.2,1);
 }
 .rcard.flipped .rcard-inner{transform:rotateY(180deg)}
 .rface{
   position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;
-  border-radius:22px;border:1px solid var(--line2);background:var(--panel2);
+  border-radius:20px;border:1px solid var(--line2);background:var(--panel2);
   padding:16px;display:flex;flex-direction:column;gap:10px;
-  box-shadow:0 18px 40px rgba(0,0,0,.35);
-  overflow:hidden;
+  box-shadow:0 18px 40px rgba(0,0,0,.4);overflow:hidden;
 }
 .rface::after{
-  content:"";position:absolute;inset:auto -20% -40% -20%;height:60%;
+  content:"";position:absolute;inset:auto -30% -45% -30%;height:65%;
   background:radial-gradient(circle at 50% 0, var(--glow), transparent 65%);
-  pointer-events:none;opacity:.55
+  pointer-events:none;opacity:.5
 }
 .rface.back{
   transform:rotateY(180deg);
-  background:linear-gradient(165deg, rgba(14,18,24,.96), rgba(10,30,28,.96));
+  background:linear-gradient(165deg, rgba(16,12,20,.98), rgba(28,10,22,.96));
 }
-.rcard.on .rface{border-color:var(--acc);box-shadow:0 0 0 1px var(--acc), 0 20px 50px rgba(112,248,208,.18)}
-.rcard.prem.on .rface{border-color:var(--prem);box-shadow:0 0 0 1px var(--prem), 0 20px 50px rgba(192,132,252,.2)}
-.rcard.locked{opacity:.45;filter:grayscale(.3)}
+.rcard.on .rface{border-color:var(--acc);box-shadow:0 0 0 1px var(--acc), 0 20px 50px rgba(255,61,113,.2)}
+.rcard.prem.on .rface{border-color:var(--prem);box-shadow:0 0 0 1px var(--prem), 0 20px 50px rgba(124,92,255,.22)}
+.rcard.locked{opacity:.42;filter:grayscale(.35)}
 .rhead{display:flex;align-items:center;gap:12px;position:relative;z-index:1}
-.pfp{
-  width:56px;height:56px;border-radius:16px;object-fit:cover;
-  border:1px solid var(--line2);background:#111
-}
+.pfp{width:56px;height:56px;border-radius:16px;object-fit:cover;border:1px solid var(--line2);background:#111}
 .rhead h4{font-size:18px;margin:0}
 .rhead .handle{color:var(--mut);font-size:13px}
 .badge{
   margin-left:auto;font-size:10px;letter-spacing:.1em;text-transform:uppercase;
-  font-family:var(--font-display);font-weight:700;padding:5px 8px;border-radius:999px;
-  border:1px solid var(--line2);color:#b7c2bc
+  font-family:var(--font-display);font-weight:800;padding:5px 8px;border-radius:999px;
+  border:1px solid var(--line2);color:#b8b2a6
 }
-.badge.prem{color:var(--prem);border-color:rgba(192,132,252,.4)}
+.badge.prem{color:var(--prem);border-color:rgba(124,92,255,.45)}
 .lms{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:relative;z-index:1;margin-top:4px}
-.lm{
-  background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:12px;padding:10px
-}
+.lm{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:12px;padding:10px}
 .lm b{display:block;font-family:var(--font-display);font-size:18px;letter-spacing:-.02em}
 .lm span{display:block;color:var(--mut);font-size:11px;letter-spacing:.06em;text-transform:uppercase;margin-top:2px}
 .ractions{display:flex;gap:8px;margin-top:auto;position:relative;z-index:2}
@@ -248,31 +245,29 @@ section + section{border-top:1px solid var(--line)}
 .back li span{color:var(--mut)}
 .back li b{font-family:var(--font-display)}
 
-/* Deliverable flips */
 .flip-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
-.scene{perspective:1000px;min-height:180px}
+.scene{perspective:1000px;min-height:186px}
 .flip{
-  position:relative;width:100%;height:100%;min-height:180px;
+  position:relative;width:100%;height:100%;min-height:186px;
   transform-style:preserve-3d;transition:transform .55s cubic-bezier(.2,.8,.2,1);cursor:pointer
 }
 .flip.on{transform:rotateY(180deg)}
 .face{
   position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;
-  border-radius:22px;border:1px solid var(--line2);background:var(--panel);
+  border-radius:20px;border:1px solid var(--line2);background:var(--panel);
   padding:20px;display:flex;flex-direction:column;justify-content:space-between
 }
-.face big{font-family:var(--font-display);font-size:48px;letter-spacing:-.04em;line-height:1;color:var(--acc)}
-.face.b{transform:rotateY(180deg);background:linear-gradient(160deg, rgba(112,248,208,.1), var(--panel2))}
+.face big{font-family:var(--font-display);font-size:48px;letter-spacing:-.04em;line-height:1;color:var(--acc2)}
+.face.b{transform:rotateY(180deg);background:linear-gradient(160deg, rgba(255,61,113,.12), var(--panel2))}
 
-/* Calendar — keep PSA mobile approach */
 #calendar .calh{
   display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin:8px 0 6px;
   font-family:var(--font-display);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)
 }
 #calendar .calg{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
 #calendar .wk{
-  margin:18px 0 8px;font-family:var(--font-display);font-weight:700;font-size:14px;
-  letter-spacing:.06em;text-transform:uppercase;color:#cfe8df
+  margin:18px 0 8px;font-family:var(--font-display);font-weight:800;font-size:14px;
+  letter-spacing:.06em;text-transform:uppercase;color:#efe8dc
 }
 #calendar .day{
   min-height:118px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.02);
@@ -280,50 +275,60 @@ section + section{border-top:1px solid var(--line)}
 }
 #calendar .day b{font-size:12px;font-family:var(--font-display);letter-spacing:.02em}
 #calendar .day.off{opacity:.28}
-#calendar .day.keyd{border-color:rgba(112,248,208,.45);box-shadow:inset 0 0 0 1px rgba(112,248,208,.2)}
+#calendar .day.keyd{border-color:rgba(255,61,113,.5);box-shadow:inset 0 0 0 1px rgba(255,61,113,.22)}
 #calendar .day span{
-  display:inline-flex;align-items:center;gap:6px;font-size:11px;color:#d5ddd8;
-  background:rgba(0,0,0,.25);border-radius:999px;padding:3px 8px;width:fit-content
+  display:inline-flex;align-items:center;gap:6px;font-size:11px;color:#e8e2d6;
+  background:rgba(0,0,0,.28);border-radius:999px;padding:3px 8px;width:fit-content
 }
 #calendar .day span i{width:7px;height:7px;border-radius:50%;display:inline-block}
 #calLegend{display:flex;flex-wrap:wrap;gap:10px 14px;margin:10px 0 6px;color:var(--mut);font-size:12px}
 #calLegend i{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:6px}
 
-/* Reach / price / success blocks */
 .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
 .dist-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:16px}
-.bar{
-  height:10px;border-radius:999px;background:rgba(255,255,255,.06);overflow:hidden;margin-top:10px
+.results-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}
+.result-card{
+  border-radius:22px;border:1px solid var(--line2);padding:24px;
+  background:
+    linear-gradient(145deg, rgba(124,92,255,.1), transparent 50%),
+    var(--panel2);
 }
-.bar > i{display:block;height:100%;background:linear-gradient(90deg,var(--acc),var(--acc2));border-radius:inherit}
-.price-hero{
-  display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:stretch;margin-top:18px
+.result-card .stat{
+  font-family:var(--font-display);font-size:clamp(28px,4vw,40px);letter-spacing:-.04em;color:var(--acc2);margin:10px 0 4px
 }
+.price-hero{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:stretch;margin-top:18px}
 .price-big{
   border-radius:28px;border:1px solid var(--line2);padding:28px;
   background:
-    linear-gradient(145deg, rgba(112,248,208,.12), transparent 45%),
+    linear-gradient(145deg, rgba(255,61,113,.14), transparent 45%),
+    linear-gradient(320deg, rgba(200,255,61,.08), transparent 40%),
     var(--panel2);
 }
 .price-big .amt{
   font-family:var(--font-display);font-size:clamp(48px,8vw,96px);letter-spacing:-.05em;line-height:.95;
   background:linear-gradient(120deg,#fff,var(--acc));-webkit-background-clip:text;background-clip:text;color:transparent
 }
-.footer{
-  border-top:1px solid var(--line);padding:28px 0 48px;position:relative;z-index:2;color:var(--mut);font-size:13px
+.cta-block{
+  margin-top:28px;padding:32px;border-radius:28px;border:1px solid var(--line2);
+  background:
+    linear-gradient(120deg, rgba(200,255,61,.1), transparent 40%),
+    linear-gradient(300deg, rgba(255,61,113,.12), transparent 45%),
+    var(--panel2);
+  display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;
 }
-
-/* Reveal */
+.cta-block h2{margin:0}
+.footer{
+  border-top:1px solid var(--line);padding:28px 0 48px;position:relative;z-index:3;color:var(--mut);font-size:13px
+}
 .rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease}
 .rv.in{opacity:1;transform:none}
 
-/* Mobile */
 @media (max-width:900px){
   .hero,.price-hero{grid-template-columns:1fr}
   .roster-grid{grid-template-columns:repeat(2,1fr)}
-  .flip-grid,.stat-grid,.g4{grid-template-columns:repeat(2,1fr)}
+  .flip-grid,.stat-grid,.g4,.results-grid{grid-template-columns:repeat(2,1fr)}
   .g3{grid-template-columns:1fr 1fr}
-  .bg-logo{width:160vw;height:160vw;opacity:.06}
+  .bg-logo{width:165vw;height:165vw;opacity:.06}
 }
 @media (max-width:700px){
   #calendar .calh{display:none}
@@ -334,12 +339,12 @@ section + section{border-top:1px solid var(--line)}
 }
 @media (max-width:420px){
   #calendar .calg{grid-template-columns:1fr}
-  .roster-grid,.flip-grid,.stat-grid,.g3,.g4,.dist-grid{grid-template-columns:1fr}
+  .roster-grid,.flip-grid,.stat-grid,.g3,.g4,.dist-grid,.results-grid{grid-template-columns:1fr}
   .wrap{width:min(100% - 20px, var(--max))}
   section{padding:52px 0}
   .bg-logo{opacity:.05}
+  .cta-block{padding:24px}
 }
-
 </style>
 </head>
 <body>
@@ -349,13 +354,14 @@ section + section{border-top:1px solid var(--line)}
 
 <nav>
   <div class="wrap">
-    <div class="wm"><img src="assets/steppa-teal.png" alt="Steppas"><span>Zango <em>×</em> Steppas</span></div>
+    <div class="wm"><img src="assets/steppa-bg.png" alt="Steppas"><span>Zango <em>×</em> Steppas</span></div>
     <div class="links">
       <a href="#deal">Deal</a>
       <a href="#pages">Roster</a>
       <a href="#calendar">Calendar</a>
       <a href="#reach">Reach</a>
-      <a href="#price">Price</a>
+      <a href="#results">Results</a>
+      <a href="#price">Lock in</a>
     </div>
   </div>
 </nav>
@@ -363,13 +369,13 @@ section + section{border-top:1px solid var(--line)}
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
     <span><b>STEPPAS</b> NETWORK</span><span class="dot">◆</span>
-    <span>TEAM PAGES · PREMIUM PAGES · SPACES · DISCORD</span><span class="dot">◆</span>
-    <span><b>$6,800</b> VALUE → <b>$2,500</b></span><span class="dot">◆</span>
+    <span>POSTS · SPACES · PREMIUM PAGES</span><span class="dot">◆</span>
+    <span><b>$4,000</b> VALUE → <b>$2,500</b></span><span class="dot">◆</span>
     <span>GAMING · MARKETING · TECH · FASHION</span><span class="dot">◆</span>
     <span>HOSTED BY <b>@0XZANGO</b></span><span class="dot">◆</span>
     <span><b>STEPPAS</b> NETWORK</span><span class="dot">◆</span>
-    <span>TEAM PAGES · PREMIUM PAGES · SPACES · DISCORD</span><span class="dot">◆</span>
-    <span><b>$6,800</b> VALUE → <b>$2,500</b></span><span class="dot">◆</span>
+    <span>POSTS · SPACES · PREMIUM PAGES</span><span class="dot">◆</span>
+    <span><b>$4,000</b> VALUE → <b>$2,500</b></span><span class="dot">◆</span>
     <span>GAMING · MARKETING · TECH · FASHION</span><span class="dot">◆</span>
     <span>HOSTED BY <b>@0XZANGO</b></span><span class="dot">◆</span>
   </div>
@@ -380,17 +386,17 @@ section + section{border-top:1px solid var(--line)}
     <div>
       <div class="eb kicker">$2,500 campaign offer</div>
       <h1>A Steppas push for <span id="heroClient">[Client Name]</span></h1>
-      <p class="lead">Bold distribution across the Steppas roster — posts, Spaces, Discord, and team access. Same rate card as prior campaigns. Set the window, pick your pages, watch the calendar pace itself.</p>
+      <p class="lead">Posts and X Spaces across the Steppas roster. Set the window, pick your pages, watch the calendar pace itself. Rate card value lands near $4K. You pay $2,500.</p>
       <div class="g3" style="margin-top:26px">
-        <div class="kpi rv"><b>$6,800</b><span>Full value</span></div>
+        <div class="kpi rv"><b>$4,000</b><span>Full value</span></div>
         <div class="kpi rv"><b>$2,500</b><span>Your price</span></div>
-        <div class="kpi rv"><b>63%</b><span>Off rate card</span></div>
+        <div class="kpi rv"><b>38%</b><span>Off rate card</span></div>
       </div>
     </div>
     <div class="hero-visual rv">
       <div class="logo-slot" id="logoSlot"><div class="ph" id="logoPh">Client<br>logo</div></div>
       <div class="client-tag">Partner · <span id="clientLabel">[Client Name]</span></div>
-      <p class="mut" style="text-align:center;max-width:260px">Swap logo + name + accent in the CONFIG block at the top of this page’s script.</p>
+      <p class="mut" style="text-align:center;max-width:260px;position:relative;z-index:1">Swap logo, name, and accent in the CONFIG block at the top of this page script.</p>
     </div>
   </div>
 </section>
@@ -399,7 +405,7 @@ section + section{border-top:1px solid var(--line)}
   <div class="wrap">
     <div class="eb">Campaign controls</div>
     <h2>Set the window</h2>
-    <p class="mut">Deliverable counts stay fixed for $2,500. Pick any length from 1 day up. A 1-day campaign stacks every deliverable on that day; a week spreads them over 7 days; 2 weeks over 14; and so on.</p>
+    <p class="mut">Deliverable counts stay fixed for $2,500. Pick any length from 1 day up. A 1-day campaign stacks every deliverable on that day. A week spreads them over 7 days. Two weeks over 14. And so on.</p>
     <div class="controls">
       <label>Start date<input type="date" id="startDate"></label>
       <label>Duration unit
@@ -429,7 +435,7 @@ section + section{border-top:1px solid var(--line)}
     <div class="alloc">
       <span class="pill" id="teamCount">Team 0 / 4</span>
       <span class="pill" id="premCount">Premium 0 / 3</span>
-      <span class="pill">Posts 16 team + 3 premium</span>
+      <span class="pill">12 team posts · 3 premium · 5 Zango posts</span>
       <button type="button" class="ghost" id="clearPicks" style="margin-left:auto">Clear picks</button>
     </div>
     <h3 style="margin-top:22px">Team pages</h3>
@@ -443,7 +449,7 @@ section + section{border-top:1px solid var(--line)}
   <div class="wrap">
     <div class="eb">What you get</div>
     <h2>Deliverables</h2>
-    <p class="mut">Tap a card to flip for the rate-card breakdown.</p>
+    <p class="mut">Posts and X Spaces only. Tap a card to flip for the rate-card breakdown.</p>
     <div class="flip-grid" id="flipGrid"></div>
   </div>
 </section>
@@ -462,20 +468,20 @@ section + section{border-top:1px solid var(--line)}
   <div class="wrap">
     <div class="eb">Network reach</div>
     <h2>Combined firepower</h2>
-    <p class="mut">Follower totals from Big Step Track roster data. Avg views shown where previously published on Steppas campaign pages; otherwise —.</p>
+    <p class="mut">Follower totals from roster data. Avg views shown where published; otherwise —.</p>
     <div class="stat-grid">
       <div class="kpi rv"><b id="reachFollowers">—</b><span>Combined followers (selected + host)</span></div>
       <div class="kpi rv"><b id="reachPages">1</b><span>Pages in play</span></div>
-      <div class="kpi rv"><b>63%</b><span>Discount vs rate card</span></div>
-      <div class="kpi rv"><b id="reachPosts">29</b><span>Posts + host posts</span></div>
+      <div class="kpi rv"><b>38%</b><span>Discount vs rate card</span></div>
+      <div class="kpi rv"><b id="reachPosts">20</b><span>Posts + Spaces</span></div>
     </div>
     <div class="dist-grid">
       <div class="card rv">
         <div class="eb">Distribution mix</div>
         <h3>Where the weight lands</h3>
-        <p class="mut" style="margin:8px 0">Team posts + host posts lead; premium and Spaces punch above weight.</p>
-        <div class="bar"><i style="width:72%"></i></div>
-        <p class="mut" style="margin-top:8px">~72% posts · rest Spaces / Discord / meetings</p>
+        <p class="mut" style="margin:8px 0">Team and Zango posts lead. Premium posts and Spaces punch above weight.</p>
+        <div style="height:10px;border-radius:999px;background:rgba(255,255,255,.06);overflow:hidden;margin-top:10px"><i style="display:block;height:100%;width:74%;background:linear-gradient(90deg,var(--acc),var(--acc2));border-radius:inherit"></i></div>
+        <p class="mut" style="margin-top:8px">~74% posts · rest Spaces</p>
       </div>
       <div class="card rv">
         <div class="eb">Success pattern</div>
@@ -483,9 +489,33 @@ section + section{border-top:1px solid var(--line)}
         <ul class="mut" style="margin-top:10px;padding-left:18px;display:grid;gap:6px">
           <li>Monday reporting cadence kept tight</li>
           <li>Host Spaces amplify selected roster posts</li>
-          <li>Discord channel holds the mid-campaign conversation</li>
+          <li>Premium pages spike mid-campaign reach</li>
         </ul>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="results">
+  <div class="wrap">
+    <div class="eb">Past results</div>
+    <h2>Proof in the feed</h2>
+    <p class="mut">Recent Steppas campaigns with numbers clients can feel.</p>
+    <div class="results-grid">
+      <article class="result-card rv">
+        <div class="eb">Case study</div>
+        <h3>Yucky Ducks</h3>
+        <div class="stat">Steppas push</div>
+        <p class="mut">Roster posts + Spaces stacked into a clean awareness spike. Exact metrics locked after client sign-off on the public cut.</p>
+        <p style="margin-top:12px;font-family:var(--font-display);font-weight:700;letter-spacing:.04em;text-transform:uppercase;font-size:12px;color:var(--ice)">Posts · Spaces · team amplify</p>
+      </article>
+      <article class="result-card rv">
+        <div class="eb">Case study</div>
+        <h3>Lute.gg</h3>
+        <div class="stat">Gaming heat</div>
+        <p class="mut">Premium + team pages carried product drops into the gaming lane. Spaces kept the conversation live through the window.</p>
+        <p style="margin-top:12px;font-family:var(--font-display);font-weight:700;letter-spacing:.04em;text-transform:uppercase;font-size:12px;color:var(--ice)">Premium · team · Spaces</p>
+      </article>
     </div>
   </div>
 </section>
@@ -498,7 +528,7 @@ section + section{border-top:1px solid var(--line)}
       <div class="price-big rv">
         <div class="eb">Your price</div>
         <div class="amt">$2,500</div>
-        <p class="lead" style="margin-top:14px">Against <b>$6,800</b> on the Steppas rate card — 63% off for this package.</p>
+        <p class="lead" style="margin-top:14px">Against <b>$4,000</b> on the Steppas rate card. About 38% off for this package.</p>
       </div>
       <div class="card rv" style="padding:28px">
         <div class="eb">Included</div>
@@ -506,66 +536,69 @@ section + section{border-top:1px solid var(--line)}
         <ul id="priceList" style="list-style:none;display:grid;gap:8px;font-size:14px"></ul>
       </div>
     </div>
+    <div class="cta-block rv" id="cta">
+      <div>
+        <div class="eb">Ready</div>
+        <h2>Lock in your campaign</h2>
+        <p class="mut" style="margin-top:8px;max-width:42ch">Pick the window, choose your pages, hit us. We confirm the calendar and go live.</p>
+      </div>
+      <a class="btn btn-lime" id="ctaBtn" href="https://x.com/0xZango" target="_blank" rel="noopener">Talk to @0xZango</a>
+    </div>
   </div>
 </section>
 
 <footer class="footer">
   <div class="wrap">
-    Zango × Steppas · generic $2,500 offer · CONFIG-ready for client logo + name · metrics from Big Step Track + prior campaign pages (missing fields shown as —)
+    Zango × Steppas · $2,500 posts + Spaces offer · CONFIG-ready for client logo + name · metrics from roster data (missing fields shown as —)
   </div>
 </footer>
 
 <script>
 /* ============================================================
-   CONFIG — swap client branding here before sending
+   CONFIG - swap client branding here before sending
    ============================================================ */
 const CONFIG = {
   clientName: "[Client Name]",
-  // Set to "logo.jpg" (place the file next to index.html) or any image URL.
-  // Leave "" to keep the dashed Client logo placeholder.
+  // Set to "logo.jpg" (place next to index.html) or any image URL.
+  // Leave "" for the dashed Client logo placeholder.
   logoUrl: "",
-  accent: "#70f8d0",
-  accentDeep: "#f88020",
+  accent: "#ff3d71",
+  accentDeep: "#c8ff3d",
   price: 2500,
-  value: 6800,
+  value: 4000,
   allocation: {
     teamPages: 4,
     premiumPages: 3,
-    teamPosts: 16,
+    teamPosts: 12,
     premiumPosts: 3,
-    hostPosts: 10,
-    spaces: 3,
-    mic: 12,
-    meetings: 3,
-    discord: 4,
-    speaks: 6,
-    bio: 1
+    hostPosts: 5,
+    zangoSpaces: 4,
+    teamSpaceCohost: 1,
+    speakerSpots: 2
   }
 };
 
-const ROSTER = {"team":[{"handle":"aangel","name":"Angel","kind":"team","followers":34822,"avgViews":8344,"pfp":"pfps/aangel.jpg"},{"handle":"bankster","name":"Banks","kind":"team","followers":25056,"avgViews":null,"pfp":"pfps/bankster.jpg"},{"handle":"cloudd","name":"Cloudd","kind":"team","followers":39338,"avgViews":11062,"pfp":"pfps/cloudd.jpg"},{"handle":"fijidyor","name":"Fiji","kind":"team","followers":30215,"avgViews":2084,"pfp":"pfps/fijidyor.jpg"},{"handle":"frostcooks","name":"Frost","kind":"team","followers":15709,"avgViews":null,"pfp":"pfps/frostcooks.png"},{"handle":"ghostdyor","name":"Ghost","kind":"team","followers":53153,"avgViews":2147,"pfp":"pfps/ghostdyor.jpg"},{"handle":"jestor","name":"Jestor","kind":"team","followers":18030,"avgViews":null,"pfp":"pfps/jestor.png"},{"handle":"kubo100x","name":"Kubo","kind":"team","followers":33111,"avgViews":null,"pfp":"pfps/kubo100x.jpg"},{"handle":"motiondyor","name":"Motion","kind":"team","followers":30687,"avgViews":null,"pfp":"pfps/motiondyor.jpg"},{"handle":"noirdyor","name":"Noir","kind":"team","followers":53965,"avgViews":null,"pfp":"pfps/noirdyor.png"},{"handle":"rivendyor","name":"Riven","kind":"team","followers":21002,"avgViews":1775,"pfp":"pfps/rivendyor.jpg"},{"handle":"saintnfa","name":"Saint","kind":"team","followers":41079,"avgViews":null,"pfp":"pfps/saintnfa.jpg"},{"handle":"shydyor","name":"Shy","kind":"team","followers":25474,"avgViews":1747,"pfp":"pfps/shydyor.jpg"},{"handle":"surge100x","name":"Surge","kind":"team","followers":42893,"avgViews":null,"pfp":"pfps/surge100x.jpg"},{"handle":"texslays","name":"Tex","kind":"team","followers":39343,"avgViews":null,"pfp":"pfps/texslays.png"},{"handle":"zpeedyor","name":"Zpeed","kind":"team","followers":11401,"avgViews":null,"pfp":"pfps/zpeedyor.jpg"}],"premium":[{"handle":"hypetrip","name":"TRIP","kind":"premium","followers":36161,"avgViews":1862,"pfp":"pfps/hypetrip.jpg"},{"handle":"hikkimori","name":"Smoke","kind":"premium","followers":55735,"avgViews":932,"pfp":"pfps/hikkimori.jpg"},{"handle":"jxcbzs","name":"Jxcob","kind":"premium","followers":47976,"avgViews":null,"pfp":"pfps/jxcbzs.jpg"},{"handle":"vibatron","name":"Vibes","kind":"premium","followers":61903,"avgViews":null,"pfp":"pfps/vibatron.jpg"},{"handle":"steppafnf","name":"SteppaFNF","kind":"premium","followers":24313,"avgViews":null,"pfp":"pfps/steppafnf.jpg"}],"host":{"handle":"0xzango","name":"Zango","followers":30426,"avgViews":3511,"pfp":"pfps/0xzango.jpg"}};
+const ROSTER = {"team":[{"handle":"aangel","name":"Angel","kind":"team","followers":34822,"avgViews":8344,"pfp":"pfps/aangel.jpg","engagement":null,"avgLikes":null,"niche":"crypto / web3"},{"handle":"bankster","name":"Banks","kind":"team","followers":25056,"avgViews":null,"pfp":"pfps/bankster.jpg","engagement":null,"avgLikes":null,"niche":"crypto / web3"},{"handle":"cloudd","name":"Cloudd","kind":"team","followers":39338,"avgViews":11062,"pfp":"pfps/cloudd.jpg","engagement":null,"avgLikes":null,"niche":"crypto / web3"},{"handle":"fijidyor","name":"Fiji","kind":"team","followers":30215,"avgViews":2084,"pfp":"pfps/fijidyor.jpg","engagement":null,"avgLikes":null,"niche":"crypto / web3"},{"handle":"frostcooks","name":"Frost","kind":"team","followers":15709,"avgViews":null,"pfp":"pfps/frostcooks.png","engagement":null,"avgLikes":null,"niche":"crypto / web3"},{"handle":"ghostdyor","name":"Ghost","kind":"team","followers":53153,"avgViews":2147,"pfp":"pfps/ghostdyor.jpg","engagement":null,"avgLikes":null,"niche":"crypto / web3"},{"handle":"jestor","name":"Jestor","kind":"team","followers":18030,"avgViews":null,"pfp":"pfps/jestor.png","engagement":null,"avgLikes":null,"niche":"crypto / web3"},{"handle":"kubo100x","name":"Kubo","kind":"team","followers":33111,"avgViews":null,"pfp":"pfps/kubo100x.jpg","engagement":null,"avgLikes":null,"niche":"crypto / web3"},{"handle":"motiondyor","name":"Motion","kind":"team","followers":30687,"avgViews":null,"pfp":"pfps/motiondyor.jpg","engagement":null,"avgLikes":null,"niche":"crypto / web3"},{"handle":"noirdyor","name":"Noir","kind":"team","followers":53965,"avgViews":null,"pfp":"pfps/noirdyor.png","engagement":null,"avgLikes":null,"niche":"crypto / web3"},{"handle":"rivendyor","name":"Riven","kind":"team","followers":21002,"avgViews":1775,"pfp":"pfps/rivendyor.jpg","engagement":null,"avgLikes":null,"niche":"crypto / web3"},{"handle":"saintnfa","name":"Saint","kind":"team","followers":41079,"avgViews":null,"pfp":"pfps/saintnfa.jpg","engagement":null,"avgLikes":null,"niche":"crypto / web3"},{"handle":"shydyor","name":"Shy","kind":"team","followers":25474,"avgViews":1747,"pfp":"pfps/shydyor.jpg","engagement":null,"avgLikes":null,"niche":"crypto / web3"},{"handle":"surge100x","name":"Surge","kind":"team","followers":42893,"avgViews":null,"pfp":"pfps/surge100x.jpg","engagement":null,"avgLikes":null,"niche":"crypto / web3"},{"handle":"texslays","name":"Tex","kind":"team","followers":39343,"avgViews":null,"pfp":"pfps/texslays.png","engagement":null,"avgLikes":null,"niche":"crypto / web3"},{"handle":"zpeedyor","name":"Zpeed","kind":"team","followers":11401,"avgViews":null,"pfp":"pfps/zpeedyor.jpg","engagement":null,"avgLikes":null,"niche":"crypto / web3"}],"premium":[{"handle":"hypetrip","name":"TRIP","kind":"premium","followers":36161,"avgViews":1862,"pfp":"pfps/hypetrip.jpg","engagement":null,"avgLikes":null,"niche":"premium creator"},{"handle":"hikkimori","name":"Smoke","kind":"premium","followers":55735,"avgViews":932,"pfp":"pfps/hikkimori.jpg","engagement":null,"avgLikes":null,"niche":"premium creator"},{"handle":"jxcbzs","name":"Jxcob","kind":"premium","followers":47976,"avgViews":null,"pfp":"pfps/jxcbzs.jpg","engagement":null,"avgLikes":null,"niche":"premium creator"},{"handle":"vibatron","name":"Vibes","kind":"premium","followers":61903,"avgViews":null,"pfp":"pfps/vibatron.jpg","engagement":null,"avgLikes":null,"niche":"premium creator"},{"handle":"steppafnf","name":"SteppaFNF","kind":"premium","followers":24313,"avgViews":null,"pfp":"pfps/steppafnf.jpg","engagement":null,"avgLikes":null,"niche":"premium creator"}],"host":{"handle":"0xzango","name":"Zango","followers":30426,"avgViews":3511,"pfp":"pfps/0xzango.jpg"}};
 
 const TEAM = ROSTER.team;
 const PREMIUM = ROSTER.premium;
 
 const COLORS = {
-  "Team post": "#70f8d0",
-  "Premium post": "#f88020",
-  "Space": "#c084fc",
-  "Mic": "#8a8070",
-  "Meeting": "#ff3b3b",
-  "Discord": "#7c6cf0",
-  "Speak": "#3fb950",
-  "Bio": "#f800d8"
+  "Team post": "#ff3d71",
+  "Premium post": "#7c5cff",
+  "Zango post": "#c8ff3d",
+  "Zango Space": "#7ad7ff",
+  "Team Space co-host": "#ff9f1c",
+  "Speaker spot": "#f0e6d8"
 };
 
 const FLIPS = [
-  {title:"Team page posts", count:"16", back:"$2,000 — Across the team pages you pick. $125 each on the rate card."},
-  {title:"Premium posts", count:"3", back:"$600 — Across the premium pages you pick (TRIP, Smoke, Jxcob, Vibes, SteppaFNF)."},
-  {title:"Host posts + Spaces", count:"13", back:"$1,300 — 10 host posts and 3 co-hosted Spaces on @0xZango."},
-  {title:"Mic spots", count:"12", back:"$350 — Client on the mic in host and team Spaces."},
-  {title:"Discord", count:"2 wks", back:"$1,700 — Channel for 2 weeks, 1 knowledge session, 1 one-hour event."},
-  {title:"Meetings + bio", count:"4", back:"$700 — 3 team meeting seats and a host-page bio spot."}
+  {title:"Team page posts", count:"12", back:"$1,500. Across the team pages you pick. $125 each on the rate card."},
+  {title:"Premium posts", count:"3", back:"$600. Across the premium pages you pick. Trip and Vibes $150. Smoke $300. Others about $150."},
+  {title:"@0xZango posts", count:"5", back:"$500. Five host posts on @0xZango. $100 each."},
+  {title:"@0xZango Spaces", count:"4", back:"$400. Four host Spaces featuring the client. $100 each."},
+  {title:"Team Space co-host", count:"1", back:"$750. Client co-hosts a team member Space."},
+  {title:"Speaker spots", count:"2", back:"$250. Two speaker picks in team Spaces. $125 each."}
 ];
 
 const $ = (id) => document.getElementById(id);
@@ -585,7 +618,7 @@ const fmtNum = (n) => (n == null || n === "" ? "—" : Number(n).toLocaleString(
 function applyBranding() {
   document.documentElement.style.setProperty("--acc", CONFIG.accent);
   document.documentElement.style.setProperty("--acc2", CONFIG.accentDeep);
-  document.documentElement.style.setProperty("--glow", CONFIG.accent + "59");
+  document.documentElement.style.setProperty("--glow", CONFIG.accent + "4D");
   $("heroClient").textContent = CONFIG.clientName;
   $("clientLabel").textContent = CONFIG.clientName;
   document.title = "Zango × Steppas for " + CONFIG.clientName + " · $2,500";
@@ -614,18 +647,16 @@ function buildCalendar() {
   const end = addDays(start, days - 1);
   $("windowLabel").textContent = iso(start) + " → " + iso(end);
   $("lengthLabel").textContent = days + (days === 1 ? " day" : " days");
-  $("calSummary").textContent = iso(start) + " to " + iso(end) + " · " + days + (days === 1 ? " day" : " days") + " · generic deliverable labels only";
+  $("calSummary").textContent = iso(start) + " to " + iso(end) + " · " + days + (days === 1 ? " day" : " days") + " · deliverable type labels only";
 
   const A = CONFIG.allocation;
   const items = [
-    ["Team post", A.teamPosts + A.hostPosts],
+    ["Team post", A.teamPosts],
     ["Premium post", A.premiumPosts],
-    ["Space", A.spaces],
-    ["Mic", A.mic],
-    ["Meeting", A.meetings],
-    ["Discord", A.discord],
-    ["Speak", A.speaks],
-    ["Bio", A.bio]
+    ["Zango post", A.hostPosts],
+    ["Zango Space", A.zangoSpaces],
+    ["Team Space co-host", A.teamSpaceCohost],
+    ["Speaker spot", A.speakerSpots]
   ];
 
   $("calLegend").innerHTML = items.map(([lab]) =>
@@ -703,19 +734,21 @@ function updateReach() {
   add(TEAM, teamPick); add(PREMIUM, premPick);
   $("reachFollowers").textContent = fmtNum(followers);
   $("reachPages").textContent = String(pages);
-  $("reachPosts").textContent = String(A.teamPosts + A.hostPosts + A.premiumPosts);
+  const totalUnits = A.teamPosts + A.premiumPosts + A.hostPosts + A.zangoSpaces + A.teamSpaceCohost + A.speakerSpots;
+  $("reachPosts").textContent = String(totalUnits);
 }
 
 function cardHTML(p, on, full, isPrem) {
   const pfp = p.pfp
     ? '<img class="pfp" src="' + p.pfp + '" alt="@' + p.handle + '">'
     : '<div class="pfp" style="display:grid;place-items:center;font-family:var(--font-display);color:var(--acc)">' + p.name.slice(0,1) + '</div>';
+  const niche = p.niche || (isPrem ? "premium creator" : "crypto / web3");
   const backRows = [
     ["Followers", fmtNum(p.followers)],
     ["Avg views", fmtNum(p.avgViews)],
-    ["Engagement", "—"],
-    ["Avg likes", "—"],
-    ["Niche", "—"],
+    ["Engagement", fmtNum(p.engagement)],
+    ["Avg likes", fmtNum(p.avgLikes)],
+    ["Niche", niche],
     ["Role", isPrem ? "Premium page" : "Team page"]
   ].map(([k,v]) => '<li><span>' + k + '</span><b>' + v + '</b></li>').join("");
   return (
@@ -789,13 +822,14 @@ function renderFlips() {
     '</div></div>'
   ).join("");
   $("priceList").innerHTML = [
-    "16 team page posts",
-    "3 premium posts",
-    "10 host posts + 3 Spaces on @0xZango",
-    "12 mic spots",
-    "Discord channel · 2 weeks",
-    "3 meeting seats + bio spot"
-  ].map((t) => '<li style="display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)"><span>' + t + '</span><b style="color:var(--acc)">✓</b></li>').join("");
+    ["12 team page posts", "$1,500"],
+    ["3 premium posts", "$600"],
+    ["5 @0xZango posts", "$500"],
+    ["4 @0xZango Spaces", "$400"],
+    ["1 team Space co-host", "$750"],
+    ["2 speaker spots", "$250"]
+  ].map(([t,v]) => '<li style="display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)"><span>' + t + '</span><b style="color:var(--acc2)">' + v + '</b></li>').join("")
+    + '<li style="display:flex;justify-content:space-between;gap:10px;padding:10px 0 0;font-family:var(--font-display)"><span>Total value</span><b style="color:var(--acc)">$4,000</b></li>';
 }
 
 function wireScrollLogo() {
@@ -806,7 +840,7 @@ function wireScrollLogo() {
   let ticking = false;
   const update = () => {
     const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
-    const rot = -(window.scrollY / max) * 360; // counterclockwise
+    const rot = -(window.scrollY / max) * 360;
     logo.style.transform = "translate(-50%, -50%) rotate(" + rot + "deg)";
     ticking = false;
   };
@@ -859,7 +893,6 @@ function wire() {
 }
 
 wire();
-
 </script>
 </body>
 </html>
