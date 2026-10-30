@@ -4,133 +4,355 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Zango × Steppas · $2,500 Campaign Offer</title>
+<link rel="preconnect" href="https://api.fontshare.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Urbanist:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=satoshi@500,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
+:root{
+  --bg:#05070a;
+  --bg2:#0a0f14;
+  --panel:rgba(14,18,24,.72);
+  --panel2:rgba(18,24,32,.9);
+  --line:rgba(255,255,255,.08);
+  --line2:rgba(255,255,255,.14);
+  --text:#f4f7f5;
+  --mut:#8b9690;
+  --acc:#70f8d0;
+  --acc2:#f88020;
+  --prem:#c084fc;
+  --pink:#f800d8;
+  --red:#ff3b3b;
+  --glow:rgba(112,248,208,.28);
+  --font-display:"Clash Display","Unbounded",system-ui,sans-serif;
+  --font-body:"Satoshi","Space Grotesk",system-ui,sans-serif;
+  --radius:18px;
+  --max:1180px;
+}
 *{box-sizing:border-box;margin:0;padding:0}
-:root{--acc:#5fa8a0;--red:#3d7a74;--cream:#eee6d1;--card:#1f1a14;--card2:#28211a;--line:rgba(238,230,209,.12);--mut:#a99f8c;--glow:rgba(95,168,160,.35)}
-body{font-family:Urbanist,sans-serif;color:var(--cream);-webkit-font-smoothing:antialiased;background:radial-gradient(900px 500px at 50% -80px,var(--glow),transparent 70%),radial-gradient(700px 700px at 110% 40%,rgba(95,168,160,.12),transparent 70%),#16130e}
-.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
-nav{position:sticky;top:0;z-index:9;background:rgba(22,19,14,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;justify-content:space-between;align-items:center;height:62px}
-.wm{font-family:Outfit;font-weight:700;font-size:22px;display:flex;align-items:center;gap:10px}
-.wm img{width:36px;height:36px;border-radius:50%;object-fit:cover;background:var(--card2)}
-.wm em{font-style:normal;color:var(--acc)}
-nav a{color:#cfc6b2;text-decoration:none;font-weight:700;font-size:15px;margin-left:20px}
-nav a:hover{color:var(--acc)}
-section{padding:72px 0;border-bottom:1px solid var(--line)}
-.eb{font-family:Outfit;font-weight:600;font-size:15px;letter-spacing:.16em;text-transform:uppercase;color:var(--acc)}
-h1{font-family:Outfit;font-weight:800;font-size:64px;line-height:1.05;margin:14px 0}
-h2{font-family:Outfit;font-weight:800;font-size:42px;line-height:1.1;margin:10px 0 18px}
-h3{font-family:Outfit;font-weight:700;font-size:23px;margin-bottom:6px;color:var(--cream)}
-p,li,td{font-size:18px;line-height:1.5;color:#ddd4c0;font-weight:500}
-.lead{font-size:22px;max-width:880px}
-.mut{color:var(--mut);font-size:15px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 24px}
-.g2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.kpi{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 10px;text-align:center}
-.kpi b{display:block;font-family:Outfit;font-size:40px;font-weight:800;color:var(--acc);line-height:1.1}
-.kpi span{font-size:16px;font-weight:700}
-table{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:14px}
-th{font-family:Outfit;font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);text-align:left;padding:14px 16px;background:var(--card2)}
-td{padding:12px 16px;border-top:1px solid var(--line);font-size:16px}
-tr.tot td{font-weight:800;color:var(--cream)}
-.price{font-family:Outfit;font-weight:800;font-size:76px;color:var(--acc);line-height:1}
-.strike{font-family:Outfit;font-size:30px;color:var(--mut);text-decoration:line-through}
-.pill{display:inline-block;background:var(--red);color:var(--cream);font-family:Outfit;font-weight:800;border-radius:99px;padding:4px 14px;font-size:15px}
-.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:30px;align-items:center}
-.hero-visual{display:flex;flex-direction:column;align-items:center;gap:14px}
-.logo-slot{width:100%;max-width:280px;aspect-ratio:1;border-radius:50%;border:2px dashed var(--acc);background:var(--card);display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 0 80px var(--glow);animation:spin 18s linear infinite;position:relative}
-.logo-slot img{width:100%;height:100%;object-fit:cover;border-radius:50%}
-.logo-slot .ph{text-align:center;padding:20px;color:var(--mut);font-family:Outfit;font-weight:700;font-size:15px;letter-spacing:.08em;text-transform:uppercase;line-height:1.4}
-@keyframes spin{to{transform:rotate(360deg)}}
-.client-tag{font-family:Outfit;font-weight:800;font-size:20px;color:var(--cream);text-align:center}
-.client-tag span{color:var(--acc)}
-.scene{perspective:1100px}
-.flip{position:relative;height:230px;transform-style:preserve-3d;transition:transform .7s;cursor:pointer}
-.flip.on,.flip:hover{transform:rotateY(180deg)}
-.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:18px;padding:22px;background:var(--card);border:1px solid var(--line)}
-.face.b{transform:rotateY(180deg);background:linear-gradient(160deg,rgba(95,168,160,.25),#1f1a14);border-color:var(--acc)}
-.face big{display:block;font-family:Outfit;font-weight:800;font-size:64px;color:var(--acc);line-height:1;margin:14px 0}
-.rv{opacity:0;transform:translateY(40px);transition:opacity .8s,transform .8s}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--font-body);
+  font-weight:500;
+  line-height:1.45;
+  overflow-x:hidden;
+  min-height:100vh;
+}
+body::before{
+  content:"";
+  position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(900px 500px at 15% -10%, rgba(112,248,208,.12), transparent 60%),
+    radial-gradient(700px 420px at 90% 10%, rgba(248,128,32,.08), transparent 55%),
+    radial-gradient(600px 400px at 50% 100%, rgba(192,132,252,.06), transparent 50%);
+}
+a{color:var(--acc);text-decoration:none}
+a:hover{color:#fff}
+img{max-width:100%;display:block}
+button,input,select{font:inherit;color:inherit}
+.wrap{width:min(100% - 32px, var(--max));margin-inline:auto;position:relative;z-index:2}
+.eb{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:var(--font-display);font-weight:600;letter-spacing:.14em;
+  text-transform:uppercase;font-size:11px;color:var(--acc);
+}
+.eb::before{content:"";width:18px;height:2px;background:var(--acc);box-shadow:0 0 12px var(--glow)}
+h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;letter-spacing:-.02em;line-height:1.05}
+h1{font-size:clamp(42px,7.2vw,84px);margin:.2em 0 .35em}
+h2{font-size:clamp(28px,4.2vw,48px);margin:.15em 0 .4em}
+h3{font-size:clamp(18px,2.2vw,24px)}
+.lead{font-size:clamp(16px,1.6vw,19px);color:#c7d0cb;max-width:54ch}
+.mut{color:var(--mut);font-size:14px}
+.xl{color:var(--acc)}
+
+/* Fixed rotating Steppa mark */
+.bg-logo{
+  position:fixed;left:50%;top:50%;
+  width:min(140vw,1400px);height:min(140vw,1400px);
+  transform:translate(-50%,-50%) rotate(0deg);
+  z-index:0;pointer-events:none;opacity:.07;
+  will-change:transform;
+  mix-blend-mode:screen;
+}
+.bg-logo img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 0 40px rgba(112,248,208,.15))}
+@media (prefers-reduced-motion:reduce){
+  .bg-logo{transition:none!important}
+}
+
+/* Nav */
+nav{
+  position:sticky;top:0;z-index:50;
+  backdrop-filter:blur(16px) saturate(140%);
+  background:rgba(5,7,10,.72);
+  border-bottom:1px solid var(--line);
+}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;min-height:64px;gap:16px}
+nav .wm{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700;letter-spacing:-.01em}
+nav .wm img{width:28px;height:28px;object-fit:contain}
+nav .wm em{color:var(--acc);font-style:normal}
+nav .links{display:flex;flex-wrap:wrap;gap:6px 14px}
+nav .links a{color:#b7c2bc;font-size:13px;font-weight:600;letter-spacing:.02em;text-transform:uppercase}
+nav .links a:hover{color:var(--acc)}
+
+/* Marquee */
+.ticker{
+  overflow:hidden;border-block:1px solid var(--line);
+  background:linear-gradient(90deg, rgba(112,248,208,.06), transparent 30%, transparent 70%, rgba(248,128,32,.06));
+  position:relative;z-index:2;
+}
+.ticker-track{
+  display:flex;gap:48px;width:max-content;
+  padding:12px 0;font-family:var(--font-display);font-weight:600;
+  letter-spacing:.08em;text-transform:uppercase;font-size:12px;color:#9aa89f;
+  animation:marquee 38s linear infinite;
+}
+.ticker-track b{color:var(--acc)}
+.ticker-track .dot{color:var(--acc2)}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.ticker-track{animation:none}}
+
+section{padding:72px 0;position:relative;z-index:2}
+section + section{border-top:1px solid var(--line)}
+
+/* Hero */
+.hero{
+  display:grid;grid-template-columns:1.35fr .85fr;gap:36px;align-items:center;
+  padding-top:28px;padding-bottom:20px;
+}
+.hero .kicker{margin-bottom:10px}
+.hero h1 span{color:var(--acc);text-shadow:0 0 40px var(--glow)}
+.hero-visual{
+  background:linear-gradient(160deg, rgba(112,248,208,.1), rgba(248,128,32,.05) 40%, rgba(5,7,10,.2));
+  border:1px solid var(--line2);border-radius:28px;padding:28px;
+  box-shadow:0 30px 80px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.06);
+  display:flex;flex-direction:column;align-items:center;gap:14px;
+}
+.logo-slot{
+  width:160px;height:160px;border-radius:28px;
+  border:1px dashed rgba(112,248,208,.35);
+  display:grid;place-items:center;background:rgba(0,0,0,.35);overflow:hidden;
+}
+.logo-slot img{width:100%;height:100%;object-fit:cover}
+.logo-slot .ph{
+  text-align:center;color:var(--mut);font-family:var(--font-display);
+  font-size:13px;letter-spacing:.12em;text-transform:uppercase;line-height:1.4
+}
+.client-tag{
+  font-family:var(--font-display);font-weight:600;font-size:13px;
+  letter-spacing:.1em;text-transform:uppercase;color:#cfe8df
+}
+.g3,.g4{display:grid;gap:12px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.kpi,.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:18px 16px;backdrop-filter:blur(10px);
+}
+.kpi b,.card h3{
+  display:block;font-family:var(--font-display);font-size:clamp(22px,2.6vw,32px);
+  letter-spacing:-.03em;margin:.15em 0
+}
+.kpi span,.card .eb{color:var(--mut);letter-spacing:.08em}
+
+/* Controls */
+.controls{
+  display:flex;flex-wrap:wrap;gap:12px;align-items:end;margin:22px 0 18px
+}
+.controls label{
+  display:flex;flex-direction:column;gap:6px;font-size:12px;color:var(--mut);
+  letter-spacing:.06em;text-transform:uppercase;font-family:var(--font-display);font-weight:600
+}
+.controls input,.controls select{
+  background:var(--panel2);border:1px solid var(--line2);border-radius:12px;
+  padding:12px 14px;min-width:140px;outline:none
+}
+.controls input:focus,.controls select:focus{border-color:var(--acc);box-shadow:0 0 0 3px var(--glow)}
+.ghost,.btn{
+  border:1px solid var(--line2);background:rgba(112,248,208,.08);color:var(--text);
+  border-radius:999px;padding:12px 18px;cursor:pointer;font-family:var(--font-display);
+  font-weight:600;letter-spacing:.04em;text-transform:uppercase;font-size:12px;
+  transition:transform .15s ease, background .15s ease, border-color .15s ease
+}
+.ghost:hover,.btn:hover{background:rgba(112,248,208,.16);border-color:var(--acc);transform:translateY(-1px)}
+.btn-acc{background:var(--acc);color:#04110d;border-color:transparent}
+.btn-acc:hover{background:#9affdf;color:#04110d}
+.btn-prem{background:rgba(192,132,252,.14);border-color:rgba(192,132,252,.4)}
+.alloc{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 8px}
+.pill{
+  display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border-radius:999px;
+  border:1px solid var(--line2);background:rgba(255,255,255,.03);
+  font-family:var(--font-display);font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase
+}
+.pill.full{border-color:var(--acc2);color:var(--acc2);box-shadow:0 0 18px rgba(248,128,32,.2)}
+
+/* Roster flip cards */
+.roster-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:16px
+}
+.rcard{
+  perspective:1000px;min-height:280px
+}
+.rcard-inner{
+  position:relative;width:100%;height:100%;min-height:280px;
+  transform-style:preserve-3d;transition:transform .55s cubic-bezier(.2,.8,.2,1);
+}
+.rcard.flipped .rcard-inner{transform:rotateY(180deg)}
+.rface{
+  position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  border-radius:22px;border:1px solid var(--line2);background:var(--panel2);
+  padding:16px;display:flex;flex-direction:column;gap:10px;
+  box-shadow:0 18px 40px rgba(0,0,0,.35);
+  overflow:hidden;
+}
+.rface::after{
+  content:"";position:absolute;inset:auto -20% -40% -20%;height:60%;
+  background:radial-gradient(circle at 50% 0, var(--glow), transparent 65%);
+  pointer-events:none;opacity:.55
+}
+.rface.back{
+  transform:rotateY(180deg);
+  background:linear-gradient(165deg, rgba(14,18,24,.96), rgba(10,30,28,.96));
+}
+.rcard.on .rface{border-color:var(--acc);box-shadow:0 0 0 1px var(--acc), 0 20px 50px rgba(112,248,208,.18)}
+.rcard.prem.on .rface{border-color:var(--prem);box-shadow:0 0 0 1px var(--prem), 0 20px 50px rgba(192,132,252,.2)}
+.rcard.locked{opacity:.45;filter:grayscale(.3)}
+.rhead{display:flex;align-items:center;gap:12px;position:relative;z-index:1}
+.pfp{
+  width:56px;height:56px;border-radius:16px;object-fit:cover;
+  border:1px solid var(--line2);background:#111
+}
+.rhead h4{font-size:18px;margin:0}
+.rhead .handle{color:var(--mut);font-size:13px}
+.badge{
+  margin-left:auto;font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  font-family:var(--font-display);font-weight:700;padding:5px 8px;border-radius:999px;
+  border:1px solid var(--line2);color:#b7c2bc
+}
+.badge.prem{color:var(--prem);border-color:rgba(192,132,252,.4)}
+.lms{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:relative;z-index:1;margin-top:4px}
+.lm{
+  background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:12px;padding:10px
+}
+.lm b{display:block;font-family:var(--font-display);font-size:18px;letter-spacing:-.02em}
+.lm span{display:block;color:var(--mut);font-size:11px;letter-spacing:.06em;text-transform:uppercase;margin-top:2px}
+.ractions{display:flex;gap:8px;margin-top:auto;position:relative;z-index:2}
+.ractions button{flex:1}
+.back ul{list-style:none;display:grid;gap:8px;position:relative;z-index:1;margin:6px 0 12px}
+.back li{
+  display:flex;justify-content:space-between;gap:10px;padding:8px 10px;
+  border-radius:10px;background:rgba(255,255,255,.03);border:1px solid var(--line);font-size:13px
+}
+.back li span{color:var(--mut)}
+.back li b{font-family:var(--font-display)}
+
+/* Deliverable flips */
+.flip-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.scene{perspective:1000px;min-height:180px}
+.flip{
+  position:relative;width:100%;height:100%;min-height:180px;
+  transform-style:preserve-3d;transition:transform .55s cubic-bezier(.2,.8,.2,1);cursor:pointer
+}
+.flip.on{transform:rotateY(180deg)}
+.face{
+  position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  border-radius:22px;border:1px solid var(--line2);background:var(--panel);
+  padding:20px;display:flex;flex-direction:column;justify-content:space-between
+}
+.face big{font-family:var(--font-display);font-size:48px;letter-spacing:-.04em;line-height:1;color:var(--acc)}
+.face.b{transform:rotateY(180deg);background:linear-gradient(160deg, rgba(112,248,208,.1), var(--panel2))}
+
+/* Calendar — keep PSA mobile approach */
+#calendar .calh{
+  display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin:8px 0 6px;
+  font-family:var(--font-display);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)
+}
+#calendar .calg{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
+#calendar .wk{
+  margin:18px 0 8px;font-family:var(--font-display);font-weight:700;font-size:14px;
+  letter-spacing:.06em;text-transform:uppercase;color:#cfe8df
+}
+#calendar .day{
+  min-height:118px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.02);
+  padding:10px;display:flex;flex-direction:column;gap:5px
+}
+#calendar .day b{font-size:12px;font-family:var(--font-display);letter-spacing:.02em}
+#calendar .day.off{opacity:.28}
+#calendar .day.keyd{border-color:rgba(112,248,208,.45);box-shadow:inset 0 0 0 1px rgba(112,248,208,.2)}
+#calendar .day span{
+  display:inline-flex;align-items:center;gap:6px;font-size:11px;color:#d5ddd8;
+  background:rgba(0,0,0,.25);border-radius:999px;padding:3px 8px;width:fit-content
+}
+#calendar .day span i{width:7px;height:7px;border-radius:50%;display:inline-block}
+#calLegend{display:flex;flex-wrap:wrap;gap:10px 14px;margin:10px 0 6px;color:var(--mut);font-size:12px}
+#calLegend i{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:6px}
+
+/* Reach / price / success blocks */
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
+.dist-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:16px}
+.bar{
+  height:10px;border-radius:999px;background:rgba(255,255,255,.06);overflow:hidden;margin-top:10px
+}
+.bar > i{display:block;height:100%;background:linear-gradient(90deg,var(--acc),var(--acc2));border-radius:inherit}
+.price-hero{
+  display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:stretch;margin-top:18px
+}
+.price-big{
+  border-radius:28px;border:1px solid var(--line2);padding:28px;
+  background:
+    linear-gradient(145deg, rgba(112,248,208,.12), transparent 45%),
+    var(--panel2);
+}
+.price-big .amt{
+  font-family:var(--font-display);font-size:clamp(48px,8vw,96px);letter-spacing:-.05em;line-height:.95;
+  background:linear-gradient(120deg,#fff,var(--acc));-webkit-background-clip:text;background-clip:text;color:transparent
+}
+.footer{
+  border-top:1px solid var(--line);padding:28px 0 48px;position:relative;z-index:2;color:var(--mut);font-size:13px
+}
+
+/* Reveal */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease}
 .rv.in{opacity:1;transform:none}
-.leg{display:flex;flex-wrap:wrap;gap:8px 18px;margin:10px 0 18px}
-.leg span,.day span{display:flex;gap:6px;align-items:flex-start}
-.leg i,.day i{width:10px;height:10px;min-width:10px;border-radius:50%;margin-top:6px}
-.leg span{font-size:15px;font-weight:700}
-.calh,.calg{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}
-.calh div{text-align:center;color:var(--mut);font-weight:700;font-size:14px}
-.wk{font-family:Outfit;font-weight:700;color:var(--acc);margin:16px 0 6px;font-size:15px;letter-spacing:.08em;text-transform:uppercase}
-.day{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px;min-height:110px;display:flex;flex-direction:column;gap:3px}
-.day b{font-family:Outfit;font-size:15px}
-.day span{font-size:12.5px;line-height:1.35;color:#d4cab5}
-.day i{width:8px;height:8px;min-width:8px;margin-top:4px}
-em.tx{font-style:normal;display:block}
-.day.off{opacity:.3}
-.day.keyd{border:2px solid var(--acc);background:linear-gradient(160deg,rgba(95,168,160,.2),var(--card))}
-.controls{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;margin:18px 0}
-.controls label{display:flex;flex-direction:column;gap:6px;font-weight:700;font-size:15px;color:var(--mut)}
-input[type=date],input[type=number],select{background:var(--card2);border:1px solid var(--line);color:var(--cream);border-radius:10px;padding:10px 12px;font-size:18px;font-family:Outfit;min-width:150px}
-button{background:var(--red);color:var(--cream);border:0;border-radius:99px;padding:11px 20px;font-family:Outfit;font-weight:800;font-size:15px;cursor:pointer}
-button.ghost{background:transparent;border:1px solid var(--acc);color:var(--cream)}
-button.sm{padding:6px 14px;font-size:13px}
-button:disabled{opacity:.4;cursor:not-allowed}
-.dot{font-family:Outfit;font-weight:800;font-size:20px;background:var(--red);color:var(--cream);min-width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:10px}
-.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
-.chip{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;cursor:pointer;min-width:130px;transition:border-color .2s,background .2s,opacity .2s;text-align:left;font-family:Urbanist,sans-serif;color:var(--cream)}
-.chip b{display:block;font-family:Outfit;font-size:16px;font-weight:700}
-.chip span{font-size:13px;color:var(--mut)}
-.chip.on{border-color:var(--acc);background:rgba(95,168,160,.15)}
-.chip.locked{opacity:.45;cursor:not-allowed}
-.alloc{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:12px 0}
-.alloc .pill{background:var(--card2);border:1px solid var(--line);color:var(--cream)}
-.alloc .pill.full{background:rgba(63,185,80,.15);border-color:#3fb950;color:#3fb950}
-.sl{list-style:none;display:flex;flex-direction:column;gap:10px;margin-top:10px}
-.sl li{font-size:17px;border-top:1px solid var(--line);padding-top:10px}
-.sl a{color:var(--cream)}.sl a:hover{color:var(--acc)}
-a.xl{color:inherit;text-decoration:underline;text-decoration-color:rgba(95,168,160,.55);text-underline-offset:3px}
-a.xl:hover{color:var(--acc)}
-.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
-.tw table{min-width:620px}
-.how{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.acts{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:14px}
-footer{padding:40px 0;text-align:center;color:var(--mut);font-size:14px}
-@media(max-width:860px){
-  h1{font-size:42px}
-  .g2,.g3,.g4,.hero,.how{grid-template-columns:1fr}
-  nav a{display:none}
-  table{display:block;overflow-x:auto}
+
+/* Mobile */
+@media (max-width:900px){
+  .hero,.price-hero{grid-template-columns:1fr}
+  .roster-grid{grid-template-columns:repeat(2,1fr)}
+  .flip-grid,.stat-grid,.g4{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:1fr 1fr}
+  .bg-logo{width:160vw;height:160vw;opacity:.06}
 }
-/* PSA-style mobile calendar: 2-col stacked days, no weekday header, no empty off-cells */
-@media(max-width:700px){
-  .g2,.g3,.g4{grid-template-columns:1fr}
+@media (max-width:700px){
   #calendar .calh{display:none}
-  #calendar .calg{grid-template-columns:1fr 1fr;gap:8px}
-  #calendar .day{min-height:0;padding:10px;font-size:13px}
-  #calendar .day b{font-size:14px;margin-bottom:4px}
-  #calendar .day span{font-size:12.5px;line-height:1.35}
+  #calendar .calg{grid-template-columns:1fr 1fr}
+  #calendar .day{min-height:0}
   #calendar .day.off{display:none}
-  #calendar .wk{margin:18px 0 8px;font-size:14px}
-  .controls{flex-direction:column;align-items:stretch}
-  .controls label{width:100%}
-  input[type=date],input[type=number],select{width:100%;min-width:0}
+  nav .links{display:none}
 }
-@media(max-width:420px){
-  #calendar .calg{grid-template-columns:1fr;gap:8px}
+@media (max-width:420px){
+  #calendar .calg{grid-template-columns:1fr}
+  .roster-grid,.flip-grid,.stat-grid,.g3,.g4,.dist-grid{grid-template-columns:1fr}
+  .wrap{width:min(100% - 20px, var(--max))}
+  section{padding:52px 0}
+  .bg-logo{opacity:.05}
 }
 
 </style>
 </head>
 <body>
+<div class="bg-logo" id="bgLogo" aria-hidden="true">
+  <img src="assets/steppa-bg.png" alt="">
+</div>
+
 <nav>
   <div class="wrap">
-    <div class="wm"><img src="steppa-mark.png" alt="Steppas"><span>Zango <em>×</em> Steppas</span></div>
-    <div>
+    <div class="wm"><img src="assets/steppa-teal.png" alt="Steppas"><span>Zango <em>×</em> Steppas</span></div>
+    <div class="links">
       <a href="#deal">Deal</a>
-      <a href="#pages">Pages</a>
+      <a href="#pages">Roster</a>
       <a href="#calendar">Calendar</a>
       <a href="#reach">Reach</a>
       <a href="#price">Price</a>
@@ -138,24 +360,37 @@ footer{padding:40px 0;text-align:center;color:var(--mut);font-size:14px}
   </div>
 </nav>
 
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span><b>STEPPAS</b> NETWORK</span><span class="dot">◆</span>
+    <span>TEAM PAGES · PREMIUM PAGES · SPACES · DISCORD</span><span class="dot">◆</span>
+    <span><b>$6,800</b> VALUE → <b>$2,500</b></span><span class="dot">◆</span>
+    <span>GAMING · MARKETING · TECH · FASHION</span><span class="dot">◆</span>
+    <span>HOSTED BY <b>@0XZANGO</b></span><span class="dot">◆</span>
+    <span><b>STEPPAS</b> NETWORK</span><span class="dot">◆</span>
+    <span>TEAM PAGES · PREMIUM PAGES · SPACES · DISCORD</span><span class="dot">◆</span>
+    <span><b>$6,800</b> VALUE → <b>$2,500</b></span><span class="dot">◆</span>
+    <span>GAMING · MARKETING · TECH · FASHION</span><span class="dot">◆</span>
+    <span>HOSTED BY <b>@0XZANGO</b></span><span class="dot">◆</span>
+  </div>
+</div>
+
 <section id="deal">
   <div class="wrap hero">
     <div>
-      <div class="eb">$2,500 campaign offer · interactive</div>
+      <div class="eb kicker">$2,500 campaign offer</div>
       <h1>A Steppas push for <span id="heroClient">[Client Name]</span></h1>
-      <p class="lead">Posts, Spaces, Discord and team access across the Steppas network. Same rate card as prior Steppas campaigns. Set your dates, pick your pages, and watch the calendar pace itself.</p>
-      <div class="g3" style="margin-top:22px">
+      <p class="lead">Bold distribution across the Steppas roster — posts, Spaces, Discord, and team access. Same rate card as prior campaigns. Set the window, pick your pages, watch the calendar pace itself.</p>
+      <div class="g3" style="margin-top:26px">
         <div class="kpi rv"><b>$6,800</b><span>Full value</span></div>
         <div class="kpi rv"><b>$2,500</b><span>Your price</span></div>
-        <div class="kpi rv"><b>63%</b><span>Off the rate card</span></div>
+        <div class="kpi rv"><b>63%</b><span>Off rate card</span></div>
       </div>
     </div>
     <div class="hero-visual rv">
-      <div class="logo-slot" id="logoSlot">
-        <div class="ph" id="logoPh">Client<br>logo</div>
-      </div>
+      <div class="logo-slot" id="logoSlot"><div class="ph" id="logoPh">Client<br>logo</div></div>
       <div class="client-tag">Partner · <span id="clientLabel">[Client Name]</span></div>
-      <p class="mut" style="text-align:center;max-width:260px">Swap logo + name in the CONFIG block at the top of this page's script.</p>
+      <p class="mut" style="text-align:center;max-width:260px">Swap logo + name + accent in the CONFIG block at the top of this page’s script.</p>
     </div>
   </div>
 </section>
@@ -166,24 +401,18 @@ footer{padding:40px 0;text-align:center;color:var(--mut);font-size:14px}
     <h2>Set the window</h2>
     <p class="mut">Deliverable counts stay fixed for $2,500. Pick any length from 1 day up. A 1-day campaign stacks every deliverable on that day; a week spreads them over 7 days; 2 weeks over 14; and so on.</p>
     <div class="controls">
-      <label>Start date
-        <input type="date" id="startDate">
-      </label>
+      <label>Start date<input type="date" id="startDate"></label>
       <label>Duration unit
         <select id="unit">
           <option value="weeks" selected>Weeks</option>
           <option value="days">Days</option>
         </select>
       </label>
-      <label id="weeksLabel">Weeks
-        <input type="number" id="weeks" min="1" max="52" value="2">
-      </label>
-      <label id="daysLabel" style="display:none">Days
-        <input type="number" id="days" min="1" max="365" value="14">
-      </label>
-      <button type="button" class="ghost" id="resetDates">Reset to today · 2 weeks</button>
+      <label id="weeksLabel">Weeks<input type="number" id="weeks" min="1" max="52" value="2"></label>
+      <label id="daysLabel" style="display:none">Days<input type="number" id="days" min="1" max="365" value="14"></label>
+      <button type="button" class="ghost" id="resetDates">Reset · today · 2 weeks</button>
     </div>
-    <div class="g4" style="margin-top:8px">
+    <div class="g4">
       <div class="card"><div class="eb">Window</div><h3 id="windowLabel">—</h3></div>
       <div class="card"><div class="eb">Length</div><h3 id="lengthLabel">—</h3></div>
       <div class="card"><div class="eb">Host page</div><h3><a class="xl" href="https://x.com/0xZango" target="_blank" rel="noopener">@0xZango</a></h3></div>
@@ -194,151 +423,68 @@ footer{padding:40px 0;text-align:center;color:var(--mut);font-size:14px}
 
 <section id="pages">
   <div class="wrap">
-    <div class="eb">Page picker</div>
+    <div class="eb">Roster picker</div>
     <h2>Pick your pages</h2>
-    <p class="lead">This package allocates <b>4 team pages</b> and <b>3 premium pages</b>. Tap to select. Host page @0xZango is always included.</p>
+    <p class="lead">This package allocates <b>4 team pages</b> and <b>3 premium pages</b>. Flip a card for more metrics. Use Select to lock it into the campaign. Host <a class="xl" href="https://x.com/0xZango" target="_blank" rel="noopener">@0xZango</a> is always included.</p>
     <div class="alloc">
       <span class="pill" id="teamCount">Team 0 / 4</span>
       <span class="pill" id="premCount">Premium 0 / 3</span>
       <span class="pill">Posts 16 team + 3 premium</span>
+      <button type="button" class="ghost" id="clearPicks" style="margin-left:auto">Clear picks</button>
     </div>
     <h3 style="margin-top:22px">Team pages</h3>
-    <div class="chips" id="teamChips"></div>
-    <h3 style="margin-top:28px">Premium pages</h3>
-    <p class="mut">TRIP, Smoke, Jxcob, Vibes, SteppaFNF</p>
-    <div class="chips" id="premChips"></div>
-    <div class="acts" style="margin-top:16px">
-      <button type="button" class="ghost sm" id="clearPicks">Clear picks</button>
-    </div>
+    <div class="roster-grid" id="teamChips"></div>
+    <h3 style="margin-top:32px">Premium pages</h3>
+    <div class="roster-grid" id="premChips"></div>
   </div>
 </section>
 
 <section id="deliverables">
   <div class="wrap">
-    <div class="eb">Everything in the campaign</div>
-    <h2>Tap a card to flip it</h2>
-    <div class="g3" id="flipGrid"></div>
-    <div class="tw">
-      <table>
-        <thead><tr><th>Deliverable</th><th>Scope</th><th>Count</th><th>Rate</th><th>Value</th></tr></thead>
-        <tbody>
-          <tr><td>Team page posts</td><td>Across your picked team pages</td><td>16</td><td>$125</td><td>$2,000</td></tr>
-          <tr><td>Premium page posts</td><td>Across your picked premium pages</td><td>3</td><td>$150–$300</td><td>$600</td></tr>
-          <tr><td>Host page posts</td><td>@0xZango</td><td>10</td><td>$100</td><td>$1,000</td></tr>
-          <tr><td>Co-hosted Spaces</td><td>On the host page</td><td>3</td><td>$100</td><td>$300</td></tr>
-          <tr><td>Mic · host Spaces</td><td>Client on the mic</td><td>2</td><td>$50</td><td>$100</td></tr>
-          <tr><td>Mic · team Spaces</td><td>Client on the mic, rotating</td><td>10</td><td>$25</td><td>$250</td></tr>
-          <tr><td>Discord channel</td><td>Steppas Discord</td><td>2 wks</td><td>$300</td><td>$600</td></tr>
-          <tr><td>Discord knowledge session</td><td>Product walkthrough</td><td>1</td><td>$550</td><td>$550</td></tr>
-          <tr><td>Discord 1 hour event</td><td>Hype or AMA</td><td>1</td><td>$550</td><td>$550</td></tr>
-          <tr><td>Team meeting seats</td><td>Talk with the team</td><td>3</td><td>$100</td><td>$300</td></tr>
-          <tr><td>Host speaks for the client</td><td>Across network Spaces</td><td>6</td><td>$25</td><td>$150</td></tr>
-          <tr><td>Bio spot</td><td>Host page bio link</td><td>1</td><td>$400</td><td>$400</td></tr>
-          <tr class="tot"><td>Total</td><td></td><td></td><td></td><td>$6,800</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="mut" style="margin-top:12px">Unit prices match the Steppas rate card used on prior campaigns. Counts stay fixed for $2,500.</p>
+    <div class="eb">What you get</div>
+    <h2>Deliverables</h2>
+    <p class="mut">Tap a card to flip for the rate-card breakdown.</p>
+    <div class="flip-grid" id="flipGrid"></div>
   </div>
 </section>
 
 <section id="calendar">
   <div class="wrap">
-    <div class="eb">Campaign calendar</div>
-    <h2>Auto-paced from your dates</h2>
+    <div class="eb">Paced calendar</div>
+    <h2>Execution calendar</h2>
     <p class="mut" id="calSummary">—</p>
-    <div class="leg" id="calLegend"></div>
+    <div id="calLegend"></div>
     <div id="calRoot"></div>
   </div>
 </section>
 
 <section id="reach">
   <div class="wrap">
-    <div class="eb">Total campaign reach</div>
-    <h2>Combined audiences</h2>
-    <p class="mut">Combined audiences, not unique people. Followers overlap. Figures as of Oct 21, 2026.</p>
-    <div class="g4" style="margin:18px 0">
-      <div class="kpi rv"><b>1,102,035</b><span>Combined audience</span></div>
-      <div class="kpi rv"><b>~30k</b><span>@0xZango followers</span></div>
-      <div class="kpi rv"><b>~4.2k</b><span>Avg views / Zango post</span></div>
-      <div class="kpi rv"><b>~3.7%</b><span>Zango engagement rate</span></div>
+    <div class="eb">Network reach</div>
+    <h2>Combined firepower</h2>
+    <p class="mut">Follower totals from Big Step Track roster data. Avg views shown where previously published on Steppas campaign pages; otherwise —.</p>
+    <div class="stat-grid">
+      <div class="kpi rv"><b id="reachFollowers">—</b><span>Combined followers (selected + host)</span></div>
+      <div class="kpi rv"><b id="reachPages">1</b><span>Pages in play</span></div>
+      <div class="kpi rv"><b>63%</b><span>Discount vs rate card</span></div>
+      <div class="kpi rv"><b id="reachPosts">29</b><span>Posts + host posts</span></div>
     </div>
-    <div class="tw">
-      <table>
-        <thead><tr><th>Source</th><th>Combined audience</th><th>Notes</th></tr></thead>
-        <tbody>
-          <tr><td>X pages (Zango + 6 team pages)</td><td>232,179</td><td>Followers as of Oct 21, 2026</td></tr>
-          <tr><td>Communities and private networks</td><td>79,115</td><td>8 communities + Lets Cook</td></tr>
-          <tr><td>Stream channels (Twitch, Kick, YouTube)</td><td>790,741</td><td>Public channel counts Oct 21, 2026</td></tr>
-          <tr><td>Spaces</td><td>not counted</td><td>No reliable average listener counts on file</td></tr>
-          <tr class="tot"><td>Total</td><td>1,102,035</td><td>Overlapping audiences</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<section id="dist">
-  <div class="wrap">
-    <div class="eb">Distribution network</div>
-    <h2>Streams and communities</h2>
-    <div class="g2">
+    <div class="dist-grid">
       <div class="card rv">
-        <h3>Stream channels</h3>
-        <ul class="sl">
-          <li><b>feinixsol</b> · Twitch · memecoin and crypto trading</li>
-          <li><b>Alexx</b> · Kick · web3, slots and casino</li>
-          <li><b>Psylaria</b> · Kick · gaming</li>
-          <li><b>ParrotOfficial</b> · Kick · crypto and trading</li>
-          <li><b>Nudah</b> · Kick · gaming, slots and casino</li>
-          <li><b>4gh0stee</b> · Twitch · crypto and memecoin</li>
-          <li><b>veryscamlikely</b> · Twitch / Kick · slots, casino, IRL</li>
-          <li><b>Coffee Collects HQ</b> · YouTube · collectibles</li>
-          <li><b>LordGalaban_DM</b> · Twitch · poker and community</li>
-          <li><b>Steppas streams</b> · Smoke, Tex, Cloudd, TRIP on Kick</li>
+        <div class="eb">Distribution mix</div>
+        <h3>Where the weight lands</h3>
+        <p class="mut" style="margin:8px 0">Team posts + host posts lead; premium and Spaces punch above weight.</p>
+        <div class="bar"><i style="width:72%"></i></div>
+        <p class="mut" style="margin-top:8px">~72% posts · rest Spaces / Discord / meetings</p>
+      </div>
+      <div class="card rv">
+        <div class="eb">Success pattern</div>
+        <h3>How Steppas campaigns land</h3>
+        <ul class="mut" style="margin-top:10px;padding-left:18px;display:grid;gap:6px">
+          <li>Monday reporting cadence kept tight</li>
+          <li>Host Spaces amplify selected roster posts</li>
+          <li>Discord channel holds the mid-campaign conversation</li>
         </ul>
-      </div>
-      <div class="card rv">
-        <h3>Communities and networks</h3>
-        <ul class="sl">
-          <li>Quakey Collective Poker Club · <a class="xl" href="https://x.com/LordGalaban" target="_blank" rel="noopener">@LordGalaban</a></li>
-          <li>Dead Poker Society · <a class="xl" href="https://x.com/DPS_Club54" target="_blank" rel="noopener">@DPS_Club54</a></li>
-          <li>Royal Straps · <a class="xl" href="https://x.com/RoyalStraps" target="_blank" rel="noopener">@RoyalStraps</a></li>
-          <li>Green Visor Gang · <a class="xl" href="https://x.com/GreenVisorGang" target="_blank" rel="noopener">@GreenVisorGang</a></li>
-          <li>Stone Gods · <a class="xl" href="https://x.com/STONEGODSHQ" target="_blank" rel="noopener">@STONEGODSHQ</a></li>
-          <li>Nxt Gen poker · <a class="xl" href="https://x.com/TheNextGenPoker" target="_blank" rel="noopener">@TheNextGenPoker</a></li>
-          <li>Jayks Stake House · <a class="xl" href="https://x.com/JayksStakeHouse" target="_blank" rel="noopener">@JayksStakeHouse</a></li>
-          <li>Crypto Sharks · <a class="xl" href="https://x.com/Crypto__Sharks" target="_blank" rel="noopener">@Crypto__Sharks</a></li>
-          <li>Lets Cook · private Discord with KOLs, traders and influencers</li>
-        </ul>
-      </div>
-    </div>
-    <p class="mut" style="margin-top:14px">Distribution is outreach across this network. It is not a guarantee that every channel posts.</p>
-  </div>
-</section>
-
-<section id="success">
-  <div class="wrap">
-    <div class="eb">Previous successes</div>
-    <h2>Proof from past campaigns</h2>
-    <div class="g2">
-      <div class="card rv">
-        <h3>YuckyDucks</h3>
-        <div class="g2" style="margin:12px 0">
-          <div class="kpi"><b>7,777</b><span>NFTs sold out</span></div>
-          <div class="kpi"><b>4.5 hrs</b><span>Mint to sellout</span></div>
-          <div class="kpi"><b>27K</b><span>Followers, up from 300</span></div>
-          <div class="kpi"><b>139 ETH</b><span>Traded on OpenSea</span></div>
-        </div>
-        <p>We ran YuckyDucks 3 months before and after launch, and it sold out all 7,777 on day one. About 4x our fee back in mint sales alone.</p>
-      </div>
-      <div class="card rv">
-        <h3>Lute.gg</h3>
-        <div class="g2" style="margin:12px 0">
-          <div class="kpi"><b>200+</b><span>Daily users onboarded</span></div>
-          <div class="kpi"><b>$5M+</b><span>Volume per month</span></div>
-        </div>
-        <p>We onboarded over 200 daily users to the platform, doing well over $5 million in volume per month.</p>
       </div>
     </div>
   </div>
@@ -346,37 +492,27 @@ footer{padding:40px 0;text-align:center;color:var(--mut);font-size:14px}
 
 <section id="price">
   <div class="wrap">
-    <div class="eb">Value vs your price</div>
-    <h2>$2,500 for $6,800 of work</h2>
-    <div class="g2" style="align-items:center">
-      <div>
-        <div class="strike">$6,800</div>
-        <div class="price">$2,500</div>
-        <div class="pill" style="margin-top:10px">SAVE $4,300 · about 63% off</div>
+    <div class="eb">Investment</div>
+    <h2>Price vs value</h2>
+    <div class="price-hero">
+      <div class="price-big rv">
+        <div class="eb">Your price</div>
+        <div class="amt">$2,500</div>
+        <p class="lead" style="margin-top:14px">Against <b>$6,800</b> on the Steppas rate card — 63% off for this package.</p>
       </div>
-      <div class="card">
-        <h3>What the fee covers</h3>
-        <p>Every deliverable in the table above for the window you set. Flat $2,500.</p>
+      <div class="card rv" style="padding:28px">
+        <div class="eb">Included</div>
+        <h3 style="margin:10px 0 14px">Package snapshot</h3>
+        <ul id="priceList" style="list-style:none;display:grid;gap:8px;font-size:14px"></ul>
       </div>
     </div>
   </div>
 </section>
 
-<section id="start">
+<footer class="footer">
   <div class="wrap">
-    <div class="eb">How we start</div>
-    <h2>Four steps</h2>
-    <div class="how">
-      <div class="card rv"><div class="dot">1</div><h3>Drop branding</h3><p class="mut">Set CONFIG.clientName and CONFIG.logoUrl (or drop logo.jpg beside this file).</p></div>
-      <div class="card rv"><div class="dot">2</div><h3>Set dates + pages</h3><p class="mut">Lock start date, duration, and the team / premium pages for this package.</p></div>
-      <div class="card rv"><div class="dot">3</div><h3>Kickoff</h3><p class="mut">Host page posts the kickoff, Discord opens, picked pages start.</p></div>
-      <div class="card rv"><div class="dot">4</div><h3>Pace to close</h3><p class="mut">Deliverables run evenly across the window you chose.</p></div>
-    </div>
+    Zango × Steppas · generic $2,500 offer · CONFIG-ready for client logo + name · metrics from Big Step Track + prior campaign pages (missing fields shown as —)
   </div>
-</section>
-
-<footer>
-  <div class="wrap">Zango (@0xZango) × Steppas · Generic $2,500 offer · Rate card Oct 2026 · Roster from Big Step Track + Ghost from prior proposals</div>
 </footer>
 
 <script>
@@ -388,8 +524,8 @@ const CONFIG = {
   // Set to "logo.jpg" (place the file next to index.html) or any image URL.
   // Leave "" to keep the dashed Client logo placeholder.
   logoUrl: "",
-  accent: "#5fa8a0",
-  accentDeep: "#3d7a74",
+  accent: "#70f8d0",
+  accentDeep: "#f88020",
   price: 2500,
   value: 6800,
   allocation: {
@@ -407,41 +543,20 @@ const CONFIG = {
   }
 };
 
-const TEAM = [
-  {handle:"aangel", name:"Angel"},
-  {handle:"bankster", name:"Banks"},
-  {handle:"cloudd", name:"Cloudd"},
-  {handle:"fijidyor", name:"Fiji"},
-  {handle:"frostcooks", name:"Frost"},
-  {handle:"ghostdyor", name:"Ghost"},
-  {handle:"jestor", name:"Jestor"},
-  {handle:"kubo100x", name:"Kubo"},
-  {handle:"motiondyor", name:"Motion"},
-  {handle:"noirdyor", name:"Noir"},
-  {handle:"rivendyor", name:"Riven"},
-  {handle:"saintnfa", name:"Saint"},
-  {handle:"shydyor", name:"Shy"},
-  {handle:"surge100x", name:"Surge"},
-  {handle:"texslays", name:"Tex"},
-  {handle:"zpeedyor", name:"Zpeed"}
-];
-const PREMIUM = [
-  {handle:"hypetrip", name:"TRIP"},
-  {handle:"hikkimori", name:"Smoke"},
-  {handle:"jxcbzs", name:"Jxcob"},
-  {handle:"vibatron", name:"Vibes"},
-  {handle:"steppafnf", name:"SteppaFNF"}
-];
+const ROSTER = {"team":[{"handle":"aangel","name":"Angel","kind":"team","followers":34822,"avgViews":8344,"pfp":"pfps/aangel.jpg"},{"handle":"bankster","name":"Banks","kind":"team","followers":25056,"avgViews":null,"pfp":"pfps/bankster.jpg"},{"handle":"cloudd","name":"Cloudd","kind":"team","followers":39338,"avgViews":11062,"pfp":"pfps/cloudd.jpg"},{"handle":"fijidyor","name":"Fiji","kind":"team","followers":30215,"avgViews":2084,"pfp":"pfps/fijidyor.jpg"},{"handle":"frostcooks","name":"Frost","kind":"team","followers":15709,"avgViews":null,"pfp":"pfps/frostcooks.png"},{"handle":"ghostdyor","name":"Ghost","kind":"team","followers":53153,"avgViews":2147,"pfp":"pfps/ghostdyor.jpg"},{"handle":"jestor","name":"Jestor","kind":"team","followers":18030,"avgViews":null,"pfp":"pfps/jestor.png"},{"handle":"kubo100x","name":"Kubo","kind":"team","followers":33111,"avgViews":null,"pfp":"pfps/kubo100x.jpg"},{"handle":"motiondyor","name":"Motion","kind":"team","followers":30687,"avgViews":null,"pfp":"pfps/motiondyor.jpg"},{"handle":"noirdyor","name":"Noir","kind":"team","followers":53965,"avgViews":null,"pfp":"pfps/noirdyor.png"},{"handle":"rivendyor","name":"Riven","kind":"team","followers":21002,"avgViews":1775,"pfp":"pfps/rivendyor.jpg"},{"handle":"saintnfa","name":"Saint","kind":"team","followers":41079,"avgViews":null,"pfp":"pfps/saintnfa.jpg"},{"handle":"shydyor","name":"Shy","kind":"team","followers":25474,"avgViews":1747,"pfp":"pfps/shydyor.jpg"},{"handle":"surge100x","name":"Surge","kind":"team","followers":42893,"avgViews":null,"pfp":"pfps/surge100x.jpg"},{"handle":"texslays","name":"Tex","kind":"team","followers":39343,"avgViews":null,"pfp":"pfps/texslays.png"},{"handle":"zpeedyor","name":"Zpeed","kind":"team","followers":11401,"avgViews":null,"pfp":"pfps/zpeedyor.jpg"}],"premium":[{"handle":"hypetrip","name":"TRIP","kind":"premium","followers":36161,"avgViews":1862,"pfp":"pfps/hypetrip.jpg"},{"handle":"hikkimori","name":"Smoke","kind":"premium","followers":55735,"avgViews":932,"pfp":"pfps/hikkimori.jpg"},{"handle":"jxcbzs","name":"Jxcob","kind":"premium","followers":47976,"avgViews":null,"pfp":"pfps/jxcbzs.jpg"},{"handle":"vibatron","name":"Vibes","kind":"premium","followers":61903,"avgViews":null,"pfp":"pfps/vibatron.jpg"},{"handle":"steppafnf","name":"SteppaFNF","kind":"premium","followers":24313,"avgViews":null,"pfp":"pfps/steppafnf.jpg"}],"host":{"handle":"0xzango","name":"Zango","followers":30426,"avgViews":3511,"pfp":"pfps/0xzango.jpg"}};
+
+const TEAM = ROSTER.team;
+const PREMIUM = ROSTER.premium;
 
 const COLORS = {
-  "Team post": "#eee6d1",
-  "Premium post": "#d9a441",
-  "Space": "#5fa8a0",
+  "Team post": "#70f8d0",
+  "Premium post": "#f88020",
+  "Space": "#c084fc",
   "Mic": "#8a8070",
-  "Meeting": "#b3302a",
+  "Meeting": "#ff3b3b",
   "Discord": "#7c6cf0",
   "Speak": "#3fb950",
-  "Bio": "#ff7ab6"
+  "Bio": "#f800d8"
 };
 
 const FLIPS = [
@@ -465,10 +580,11 @@ const parseISO = (s) => {
 const addDays = (d,n) => { const x = new Date(d.getFullYear(), d.getMonth(), d.getDate()); x.setDate(x.getDate()+n); return x; };
 const monName = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const fmtShort = (d) => monName[d.getMonth()] + " " + d.getDate();
+const fmtNum = (n) => (n == null || n === "" ? "—" : Number(n).toLocaleString("en-US"));
 
 function applyBranding() {
   document.documentElement.style.setProperty("--acc", CONFIG.accent);
-  document.documentElement.style.setProperty("--red", CONFIG.accentDeep);
+  document.documentElement.style.setProperty("--acc2", CONFIG.accentDeep);
   document.documentElement.style.setProperty("--glow", CONFIG.accent + "59");
   $("heroClient").textContent = CONFIG.clientName;
   $("clientLabel").textContent = CONFIG.clientName;
@@ -579,6 +695,59 @@ function buildCalendar() {
 let teamPick = new Set();
 let premPick = new Set();
 
+function updateReach() {
+  const A = CONFIG.allocation;
+  let followers = (ROSTER.host && ROSTER.host.followers) || 0;
+  const pages = 1 + teamPick.size + premPick.size;
+  const add = (list, set) => list.forEach((p) => { if (set.has(p.handle) && p.followers) followers += p.followers; });
+  add(TEAM, teamPick); add(PREMIUM, premPick);
+  $("reachFollowers").textContent = fmtNum(followers);
+  $("reachPages").textContent = String(pages);
+  $("reachPosts").textContent = String(A.teamPosts + A.hostPosts + A.premiumPosts);
+}
+
+function cardHTML(p, on, full, isPrem) {
+  const pfp = p.pfp
+    ? '<img class="pfp" src="' + p.pfp + '" alt="@' + p.handle + '">'
+    : '<div class="pfp" style="display:grid;place-items:center;font-family:var(--font-display);color:var(--acc)">' + p.name.slice(0,1) + '</div>';
+  const backRows = [
+    ["Followers", fmtNum(p.followers)],
+    ["Avg views", fmtNum(p.avgViews)],
+    ["Engagement", "—"],
+    ["Avg likes", "—"],
+    ["Niche", "—"],
+    ["Role", isPrem ? "Premium page" : "Team page"]
+  ].map(([k,v]) => '<li><span>' + k + '</span><b>' + v + '</b></li>').join("");
+  return (
+    '<div class="rcard' + (on ? ' on' : '') + (!on && full ? ' locked' : '') + (isPrem ? ' prem' : '') + '" data-handle="' + p.handle + '">' +
+      '<div class="rcard-inner">' +
+        '<div class="rface front">' +
+          '<div class="rhead">' + pfp +
+            '<div><h4>' + p.name + '</h4><div class="handle"><a class="xl" href="https://x.com/' + p.handle + '" target="_blank" rel="noopener">@' + p.handle + '</a></div></div>' +
+            '<span class="badge' + (isPrem ? ' prem' : '') + '">' + (isPrem ? 'Premium' : 'Team') + '</span>' +
+          '</div>' +
+          '<div class="lms">' +
+            '<div class="lm"><b>' + fmtNum(p.followers) + '</b><span>followers</span></div>' +
+            '<div class="lm"><b>' + fmtNum(p.avgViews) + '</b><span>avg views</span></div>' +
+          '</div>' +
+          '<div class="ractions">' +
+            '<button type="button" class="ghost flip-btn">Flip</button>' +
+            '<button type="button" class="btn ' + (on ? 'btn-acc' : (isPrem ? 'btn-prem' : '')) + ' select-btn">' + (on ? 'Selected' : 'Select') + '</button>' +
+          '</div>' +
+        '</div>' +
+        '<div class="rface back">' +
+          '<div class="rhead"><div><h4>' + p.name + '</h4><div class="handle">@' + p.handle + '</div></div></div>' +
+          '<ul>' + backRows + '</ul>' +
+          '<div class="ractions">' +
+            '<button type="button" class="ghost flip-btn">Flip back</button>' +
+            '<button type="button" class="btn ' + (on ? 'btn-acc' : '') + ' select-btn">' + (on ? 'Selected' : 'Select') + '</button>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+    '</div>'
+  );
+}
+
 function renderChips() {
   const A = CONFIG.allocation;
   const teamFull = teamPick.size >= A.teamPages;
@@ -589,24 +758,27 @@ function renderChips() {
   tc.classList.toggle("full", teamFull);
   pc.classList.toggle("full", premFull);
 
-  const make = (list, set, full, mount) => {
-    mount.innerHTML = "";
-    list.forEach((p) => {
-      const on = set.has(p.handle);
-      const btn = document.createElement("button");
-      btn.type = "button";
-      btn.className = "chip" + (on ? " on" : "") + (!on && full ? " locked" : "");
-      btn.innerHTML = "<b>" + p.name + "</b><span>@" + p.handle + "</span>";
-      btn.onclick = () => {
-        if (on) set.delete(p.handle);
-        else if (!full) set.add(p.handle);
-        renderChips();
-      };
-      mount.appendChild(btn);
+  const wireMount = (list, set, full, mount, isPrem) => {
+    mount.innerHTML = list.map((p) => cardHTML(p, set.has(p.handle), full, isPrem)).join("");
+    mount.querySelectorAll(".rcard").forEach((card) => {
+      const handle = card.getAttribute("data-handle");
+      card.querySelectorAll(".flip-btn").forEach((btn) => {
+        btn.addEventListener("click", (e) => { e.stopPropagation(); card.classList.toggle("flipped"); });
+      });
+      card.querySelectorAll(".select-btn").forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const on = set.has(handle);
+          if (on) set.delete(handle);
+          else if (!full) set.add(handle);
+          renderChips();
+        });
+      });
     });
   };
-  make(TEAM, teamPick, teamFull, $("teamChips"));
-  make(PREMIUM, premPick, premFull, $("premChips"));
+  wireMount(TEAM, teamPick, teamFull, $("teamChips"), false);
+  wireMount(PREMIUM, premPick, premFull, $("premChips"), true);
+  updateReach();
 }
 
 function renderFlips() {
@@ -616,14 +788,42 @@ function renderFlips() {
     '<div class="face b"><h3>' + f.title + '</h3><p>' + f.back + '</p></div>' +
     '</div></div>'
   ).join("");
+  $("priceList").innerHTML = [
+    "16 team page posts",
+    "3 premium posts",
+    "10 host posts + 3 Spaces on @0xZango",
+    "12 mic spots",
+    "Discord channel · 2 weeks",
+    "3 meeting seats + bio spot"
+  ].map((t) => '<li style="display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid var(--line)"><span>' + t + '</span><b style="color:var(--acc)">✓</b></li>').join("");
+}
+
+function wireScrollLogo() {
+  const logo = $("bgLogo");
+  if (!logo) return;
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduce) return;
+  let ticking = false;
+  const update = () => {
+    const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+    const rot = -(window.scrollY / max) * 360; // counterclockwise
+    logo.style.transform = "translate(-50%, -50%) rotate(" + rot + "deg)";
+    ticking = false;
+  };
+  window.addEventListener("scroll", () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(update);
+  }, {passive:true});
+  update();
 }
 
 function wire() {
   applyBranding();
   renderFlips();
   renderChips();
+  wireScrollLogo();
   $("startDate").value = iso(new Date());
-  // Optional URL overrides for preview/QA: ?days=7 or ?weeks=2
   const qp = new URLSearchParams(location.search);
   if (qp.has("days")) {
     $("unit").value = "days";
